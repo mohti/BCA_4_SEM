@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">BCA 4 Sem</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="traid">\n “TRIAD” \n\n A computer system can be defined as a TRIAD comprising of three fundamental components:\n
+(1) The CPU (2) The Memory and (3) The I/O \n\n
+These three devices communicates with each other with the help of a set of wires called System Bus,
+where the System Bus comprises of three buses as –\n
+1. The Address Bus\n
+2. The Data Bus and\n
+3. The Control Bus.\n\n
+A computer system requires an interface with the user to execute a program. The interaction is
+accomplished with the help of I/O devices. (The Input – Output subsystem of a computer, referred to
+as I/O, provides an efficient mode of communication between the central system and the outside
+environment).\n\n</string>
+    <string name="IOheading"><u><b>Input – Output Architecture</b></u> \n\n
+A computer system organization is defined as a collection of component connected together in a
+logical sense, i.e. the logical structure of a computer system is termed computer organization.
+The collection of physical component such as CPU, Memory, I/O arranged constitutes computer
+architecture. Thus the physical definition of the system is architecture.
+\n\n
+Organization = Logical\n
+Architecture = Physical\n\n</string>
+    <string name="systemHeading">\nThe I/O devices are connected to an entity called an interface (I/F) to have
+            an interaction with the system.\n\n</string>
+    <string name="organisation">\n
+     <u>  <b>Organization and Architecture→</b></u> \n\n
+In describing computer system, a distinction is often made between computer architecture and
+computer organization. Computer architecture refers to those attributes of a system visible to a
+programmer or put another way, those attributes that have a direct impact on the logical execution
+of a program. Computer organization refers to the operational units and their interconnections that
+realize the architectural specifications. Example of architectural attributes include the instruction
+set, the number of bits used to represent various data types (e.g. numbers, characters), I/O
+mechanisms, and techniques for addressing memories. Organizational attributes include those
+hardware details transparent to the programmer, such as control signals, interface between the
+computer and peripherals and the memory technology used.
+Register transfer language\n
+A digital system is an interconnection of digital hardware modules combined together to
+perform a specific processing task. The modules are constructed using registers ,decoders,
+arithmetic elements and control logic. These various modules are interconnected with
+common data and control paths to form a digital computer system.\n
+A digital module can be best defined as the register it contains and the operations that are
+performed on the data stored in them. The operations executed on data stored in registers
+are called micro operations. A micro-operation is defined as an elementary operation
+carried out on one clock pulse, over the information stored in one or more registers.eg.
+shift, count, clear load.\n
+The organization of a digital computer can be best defined by:\n
+1)The set of registers it contains and their function\n
+2)sequence of micro-operations performed on the data stored in the registers\n
+3)control functions that initiate the sequence of micro-operations.\n
+The symbolic notations used to describe the micro-operation transfers among registers is
+called a register transfer language. As a programming language is a procedure for writing
+symbols to specify a given computational process similarly a register transfer language ia a
+system for expressing the micro-operation sequences in a symbolical form among the
+registers of a digital module. Unlike a programming language; a register transfer language is
+directly related to and cannot be separated from the registers and other hardware that it
+defines.\n\n
+\n\n<u><b>INTER-REGISTER TRANSFER</b></u>
+Data transfer among registers is accomplished by means of inter-register transfer microoperations. These micro-operations perform a direct transfer of binary information from
+one register to another. The destination register receives the information from the source
+register retaining the contents in source register.\n
+Information transfer from one register to the another can be performed either in parallel or
+in serial.\n\n
+        <u><b>Parallel transfer</b></u>\n\n
+Parallel transfer is a simultaneous transfer of all bits from the source register to destination
+register and is accomplished during one clock pulse. This micro-operation is designated in
+symbolic form as follows:\n\n
+A←B\n\n
+And denotes a transfer of the content of register B into register A.The binary function which
+determines when this transfer will take place is called a control function.A control function
+is a binary function that is it can be either equal to 0 or 1.Thus the modified symbology for
+the above transfer can be written as\n\n
+P:A←B\n\n
+The control function P symbolizes the fact that the stated micro-operation is executed by
+the hardware only if P=1.\n</string>
+
+
+    <string name="graphics_unit1_firstsagment">
+    what is computer Graphics\n
+computer graphics is use of computer to define store manipulate,
+introgate  and present the pictorial output
+                          OR\n
+
+computer graphics means creation,storage and manipulation of models come
+from many fields incuding physical ,mathematical,artistics and biological structure\n
+
+<b><u>Types:-</u></b>\n
+        *Interactive computer graphics +++++++)) a two way communication between the computer
+and the user ,where the observer is given some control over the image by providing
+an input device example video games  \n\n
+
+        <b>* Non -Interactive computer graphics (passive computer graphics)-</b>\n
+here  the user does not have any kind of control over the image .
+the image is product of static stored program and will work according to
+the instructions given in the program .here the image is totally
+under the control of program intruction not under the user
+Example - screensaver.
+\n\n
+
+        <u>pixel:-</u> the smallest addressable screen element or smallest addresabale area which we can
+can control on the screen at some point of time is called pixel
+\n\n
+<u>Resolution:- </u>the number of pointss that can be displayed without
+overlapping each other on the screen is defined as resolution
+\n\n\
+It is also defines the quality of graphics
+        \n
+Aspect ratio :- it is a ratio of vertical lenght by horizontal length
+of any object in term of the number of pixel persent
+
+
+    </string>
+    <string name="graphics_workstation">Graphics workStation :-</string>
+    <string name="second_segment_workstation_graphics">-it is a graphical kernal system (gks) term for a graphical
+device that can display graphical output and accept graphical
+input\n
+-It consists of cpu ,display,processer ,memory,display device
+,recoder,plotter,keyboard,mouse,scanner,etc..\n
+-Thev main hardware component of a graphics workstation are
+cpu and display processor.\n
+-The display processor is also called graphics controller or a
+a diplay co-processor.\n
+-It makes cpu free from the graphical work.\n
+-In addition to the system memory a seperate display procesor
+ memory area is provided.\n
+- The graphical workstation have a provision to interface
+videogame and television set\n
+- They also have display devices with very high resolution and
+veru high performance cpu.\n
+-The graphical workstation is always supported with graphical
+software\n
+.
+
+Framebuffer-\n\n
+A frame buffer is a secondary memory buffer used to construct a video frame before it is displayed on a
+screem surface.\n
+
+# It is an area of memory used to hold the frame of data that
+ is continusly being send to the screen .\n
+# The buffer is the size of maximum image that can be displayed and
+  may be a seprate memory bank on the graphics card or a reserved part of regular
+memory.\n
+        #framebuffer is represented by an array which collects and store the intensity value
+for all the pixel\n
+# This array is accesed by the display device to determine the intensity at which 
+each pixel should be displayed\n
+         Therefor, a frame buffer contains internal representation of pixel
+</string>
+</resources>

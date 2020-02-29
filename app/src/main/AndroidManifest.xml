@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bca4sem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/notessymbol"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".vbnetActivities.vbnet_Unit_5"></activity>
+        <activity android:name=".vbnetActivities.vbnet_Unit_4" />
+        <activity android:name=".vbnetActivities.vbnet_Unit_3" />
+        <activity android:name=".vbnetActivities.vbnet_Unit_2" />
+        <activity android:name=".vbnetActivities.vbnet_Unit_1" />
+        <activity android:name=".conam_activities.conam_Unit_5" />
+        <activity android:name=".conam_activities.conam_Unit_4" />
+        <activity android:name=".conam_activities.conam_Unit_3" />
+        <activity android:name=".conam_activities.conam_Unit_2" />
+        <activity android:name=".conam_activities.conam_Unit_1" />
+        <activity android:name=".os_Activities.os_Unit_5" />
+        <activity android:name=".os_Activities.os_Unit_4" />
+        <activity android:name=".os_Activities.os_Unit_3" />
+        <activity android:name=".os_Activities.os_Unit_2" />
+        <activity android:name=".os_Activities.os_unit_1" />
+        <activity android:name=".unit_coa.Unit5_coa" />
+        <activity android:name=".unit_coa.Unit4_coa" />
+        <activity android:name=".unit_coa.Unit3_coa" />
+        <activity android:name=".unit_coa.unit2_coa" />
+        <activity android:name=".graphicsActivities.graphics_unit_5" />
+        <activity android:name=".graphicsActivities.graphics_unit_4" />
+        <activity android:name=".graphicsActivities.graphics_unit_3" />
+        <activity android:name=".graphicsActivities.graphics_unit_2" />
+        <activity android:name=".graphicsActivities.graphics_unit_1" />
+        <activity android:name=".Unit1_COA" />
+        <activity android:name=".Home" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
