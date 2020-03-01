@@ -7,9 +7,10 @@
     tools:context=".vbnetActivities.vbnet_Unit_1">
 
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:textSize="45dp"
-    android:text="put vb 1 unit here"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="55dp"
+        android:text="Hello Mohit"/>
 </RelativeLayout>
