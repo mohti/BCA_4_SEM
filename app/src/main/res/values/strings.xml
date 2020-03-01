@@ -147,4 +147,127 @@ for all the pixel\n
 each pixel should be displayed\n
          Therefor, a frame buffer contains internal representation of pixel
 </string>
+    <string name="firstsegmentvbunit1">
+      <u><b> *DOT NET Framework</b></u>\n:-
+        The .Net framework is a software development platform developed by Microsoft. The framework was meant to create applications,
+        which would run on the Windows Platform. The first version of the .Net framework was released in the year 2002.\n
+        The version was called .Net framework 1.0. The .Net framework has come a long way since then, and the current version is 4.7.1.\n\n
+
+        <u>The .Net framework can be used to create both </u>- Form-based and Web-based applications. Web services can also be developed using the .Net framework.\n
+
+         The framework also supports various programming languages such as Visual Basic and C#. So developers can choose and select the language
+        to develop the required application. In this chapter, you will learn some basics of the .Net framework.\n\n
+
+
+
+
+  * <b><u>Overview and Base Class Library</u></b>:-\n
+The Framework Class Library or FCL provides the system functionality in the .NET Framework as it has various classes, data types, interfaces, etc. to perform multiple
+functions and build different types of applications such as desktop applications, web applications, mobile applications, etc. The Framework Class Library is integrated
+ with the Common Language Runtime (CLR) of the .NET framework and is used by all the .NET languages such as C#, F#, Visual Basic .NET, etc.\n\n
+
+        <b>Categories in the Framework Class Library</b>>:-\n
+    The functionality of the Framework Class Library can be broadly divided into three categories i.e utility features written in .NET, wrappers around the
+        OS functionality and frameworks. These categories are not rigidly defined and there are many classes that may fit into more than one category.
+Framwork-Class-Library-FCL-in-Dot-NET
+
+
+<u>Details about the Categories in the Framework Class Library are given as follows</u>:\n\n
+
+        1)<b>Utility Features</b>:- The utility features in the FCL includes various collection classes such as list, stack, queue, dictionary, etc. and also classes for more varied manipulations such as Regex class for regular expressions.\n
+
+2)<b>Wrappers Around OS functionality</b>:- Some of the features in the FCL are wrappers around the underlying Windows OS functionality. These include the classes for using the file system, the classes to handle the network features, the
+classes to handle I/O for console applications, etc.\n
+
+3)<b>Frameworks</b>:- There are various frameworks available in the FCL to develop certain applications. For example, ASP.NET is used to develop web applications, Windows Presentation Foundation (WPF) is used to render user interfaces in
+Windows applications and so on.\n\n
+
+
+
+
+* <u><b>MSIL</b></u>:-\n MSIL stands for Microsoft Intermediate Language. We can call it as Intermediate Language (IL) or Common Intermediate Language (CIL). During the compile time , the compiler convert the source code into Microsoft Intermediate
+Language (MSIL) .Microsoft Intermediate Language (MSIL) is a CPU-independent set of instructions that can be efficiently converted to the native code. \n\n
+
+
+
+* <u><b>Common Language Run Time (CLR)</b></u>\n:-
+CLR is the basic and Virtual Machine component of the .NET Framework. It is the run-time enviornment in the .NET Framework that runs the codes and helps in making the development process easier by providing the various services.
+Basically, it is responsible for managing the execution of .NET programs regardless of any .NET programming language. Internally, CLR implements the VES(Virtual Execution System) which is defined in the Microsoft’s implementation
+ of the CLI(Common Language Infrastructure).The code that runs under the Common Language Runtime is termed as the Managed Code. In other words, you can say that CLR provides a managed execution enviornment for the .NET programs
+by improving the security, including the cross language integration and a rich set of class libraries etc. CLR is present in everyn .NET framework verison\n\n</string>
+    <string name="second_segment_vb_unit1">
+        * <b><u>Events</u></b>:-\nAn event is an action or occurrence such as a mouse click, a key press, mouse movements, or any system-generated notification. A process communicates through events. For example, interrupts are system-generated events.
+ When events occur, the application should be able to respond to it and manage it.\n\n
+
+
+
+* <b><u>.NET Assemblies</u></b>:-\nAssemblies form the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications.
+ An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality.
+ Assemblies take the form of executable (.exe) or dynamic link library (.dll) files, and are the building blocks of .NET applications.
+ They provide the common language runtime with the information it needs to be aware of type implementations.\n
+
+In .NET Core and .NET Framework, you can build an assembly from one or more source code files. In .NET Framework, assemblies can contain one or more modules.
+This allows larger projects to be planned so that several developers can work on separate source code files or modules, which are combined to create a single assembly.\n\n
+Assemblies have the following properties:\n\n
+
+1.Assemblies are implemented as .exe or .dll files.\n
+
+2.For libraries that target the .NET Framework, you can share assemblies between applications by putting them in the global assembly cache (GAC). You must strong-name assemblies before you can include them in the GAC. For more information, see Strong-named assemblies.\n
+
+3.Assemblies are only loaded into memory if they are required. If they are not used, they are not loaded. This means that assemblies can be an efficient way to manage resources in larger projects.\n
+
+4.You can programmatically obtain information about an assembly by using reflection. For more information, see Reflection (C#) or Reflection (Visual Basic).\n
+
+5.You can load an assembly just to inspect it by using the MetadataLoadContext class in .NET Core and the Assembly.ReflectionOnlyLoad or Assembly.ReflectionOnlyLoadFrom methods in .NET Core and .NET Framework.\n\n\n
+
+
+In .Net 3 types of Assemblies are available:\n\n
+
+        1. <u>Private Assemblies</u> : Private Assemblies are designed to be used by one application and
+                                   must reside in that application\'s directory or subdirectory. \n
+
+        2. <u>Shared Assemblies</u>: Microsoft offers the shared assembly for those components that must
+                                  be distributed. It centered around two principles.
+                                  Firstly, called side-by-side execution, allows the CLR to house multiple
+                                  versions of the same component on a single machine.
+                                  Secondly, termed binding, ensures that clients obtain the version of the
+                                  component they expect. \n
+
+        3. <u>Satellite Assembly</u>: A satellite Assembly is defined as an assembly with resources only, no
+                                 executable code.\n
+
+        * <b><u>Advantages of Assemblies over Predecessors</u></b>:-\n
+Assemblies are designed to simplify application deployment and to solve versioning problems that can occur with component-based applications.\n
+End users and developers are familiar with versioning and deployment issues that arise from today\’s component-based systems. Some end users have
+experienced the frustration of installing a new application on their computer, only to find that an existing application has suddenly stopped working.
+ Many developers have spent countless hours trying to keep all necessary registry entries consistent in order to activate a COM class\n
+Many deployment problems have been solved by the use of assemblies in the .NET Framework. Because they are self-describing components that have no
+dependencies on registry entries, assemblies enable zero-impact application installation. They also simplify uninstalling and replicating applications.
+\n\n\n
+
+        * <u><b>Dynamic Link Library (DLL)</b></u>>:-\n
+A DLL is a library that contains code and data that can be used by more than one program at the same time. For example, in Windows operating systems,
+the Comdlg32 DLL performs common dialog box related functions. Therefore, each program can use the functionality that is contained in this DLL to implement
+an Open dialog box. This helps promote code reuse and efficient memory usage.\n
+By using a DLL, a program can be modularized into separate components. For example, an accounting program may be sold by module. Each module can be loaded
+into the main program at run time if that module is installed. Because the modules are separate, the load time of the program is faster, and a module is
+only loaded when that functionality is requested.\n
+Additionally, updates are easier to apply to each module without affecting other parts of the program. For example, you may have a payroll program, and the tax
+rates change each year. When these changes are isolated to a DLL, you can apply an update without needing to build or install the whole program again.\n\n
+
+        *<u><b>Namespaces</b></u>:-\n
+Namespace is logical division of class, structure and interface OR way to organize your Visual Basic .NET code is through the use of namespaces.\n
+Namespaces are a way of grouping type names and reducing the chance of name collisions.\n
+The namespace with all the built-in functionality comes under System namespace. All other namespaces comes under this System namespace.\n\n
+
+Declaration of Namespaces:\n
+// Namespace Declaration in C#
+using System;
+using System.Data;
+// Namespace Declaration in VB\n
+imports system;\n
+imports system.Data;\n\n
+        <u><b>*Visual Studio IDE</b></u>:-
+
+    </string>
 </resources>

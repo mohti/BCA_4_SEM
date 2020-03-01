@@ -5,12 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vbnetActivities.vbnet_Unit_1">
-
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="55dp"
-        android:text="Hello nabeel"/>
+        android:text="@string/firstsegmentvbunit1"
+        android:textSize="18dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/clrimageforvb"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/second_segment_vb_unit1"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:src="@drawable/visualstdioide"
+        />
+</LinearLayout>
+</ScrollView>
 </RelativeLayout>
