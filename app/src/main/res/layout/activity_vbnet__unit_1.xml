@@ -16,7 +16,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:documentView_textAlignment="justified"
-    app:documentView_text="@string/second_segment_vb_unit1"/>
+    app:documentView_text="@string/graphics_unit1_firstsagment"/>
         <ImageView
         android:layout_width="match_parent"
         android:layout_height="350dp"
