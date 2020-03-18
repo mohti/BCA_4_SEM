@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/txt"
-        android:textSize="18dp"
+        android:textSize="15dp"
         android:textStyle="italic"
         android:textColor="@android:color/black"
         android:text="@string/IOheading"/>
@@ -42,13 +42,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/system"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textColor="@android:color/black"
-            android:text="@string/systemHeading"/>
 
-        <ImageView
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/systemHeading"
+                android:textColor="@android:color/black" />
+
+            <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/connection"/>
@@ -60,6 +61,71 @@
             android:textColor="@android:color/black"
             android:textStyle="italic"
             android:text="@string/organisation"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hardware_impletation"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Basic_symbol"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:textColor="@android:color/black"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/serial_transfer"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Bus_transfer"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:textColor="@android:color/black"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bus_transfer"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/below_bus"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:textColor="@android:color/black"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bussystem_four_reg"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/multiple_reg"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/memory_transfer"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:textColor="@android:color/black"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/connection_address_mu"
+                />
+
+
+
+
 
 
         </LinearLayout>
