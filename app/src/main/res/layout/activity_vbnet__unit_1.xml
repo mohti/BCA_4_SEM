@@ -15,6 +15,7 @@
 <com.bluejamesbond.text.DocumentView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    app:documentView_textStyle="bold|strikeThru|underline"
     app:documentView_textAlignment="justified"
     app:documentView_text="@string/firstsegmentvbunit1"/>
         <ImageView
