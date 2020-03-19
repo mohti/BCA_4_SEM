@@ -272,4 +272,18 @@ imports system.Data;\n\n
     </string>
     <string name="arrayvbunit3">An array stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type. All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element</string>
     <string name="declaringarray">Creating Arrays in VB.Net To declare an array in VB.Net, you use the Dim statement. For example, Dim intData(30) \' an array of 31 elements Dim strData(20) As String \' an array of 21 strings Dim twoDarray(10, 20) As Integer \'a two dimensional array of integers Dim ranges(10, 100) \'a two dimensional array You can also initialize the array elements while declaring the array. For example, Dim intData() As Integer = {12, 16, 20, 24, 28, 32} Dim names() As String = {string var} Dim miscData() As Object = {string in double qutos, 12d, 16ui}</string>
+    <string name="dynamicarray">
+        Dynamic arrays are arrays that can be dimensioned and re-dimensioned as par the need of the program.
+        You can declare a dynamic array using the ReDim statemen\n
+       Syntax for ReDim statement −\n
+        ReDim [Preserve] arrayname(subscripts)\n
+        Where,\n\n
+        The Preserve keyword helps to preserve the data in an existing array, when you resize it.\n
+        <B>arrayname</B> is the name of the array to re-dimension/n
+
+
+
+
+    </string>
+
 </resources>

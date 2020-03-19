@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:textColor="#090101"
-            android:text="@string/array"/>
+            android:text="Array"/>
 
 
         <com.bluejamesbond.text.DocumentView
@@ -50,7 +50,7 @@
         android:textSize="24sp"
         android:paddingLeft="10dp"
         android:textColor="#090101"
-        android:text="@string/dynamic_arrays"/>
+        android:text="dynamic array"/>
     <com.bluejamesbond.text.DocumentView
         android:paddingLeft="10dp"
         android:layout_width="match_parent"
