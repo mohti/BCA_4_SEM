@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vbnetActivities.vbnet_Unit_2">
-<TextView
+<com.codesgood.views.JustifiedTextView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:textSize="45dp"
-    android:text="put vbnet unit 2 notes here"/>
+    android:layout_height="wrap_content"
+    android:text="@string/test"/>
 </RelativeLayout>

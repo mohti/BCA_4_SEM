@@ -6,10 +6,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".vbnetActivities.vbnet_Unit_3">
-<com.bluejamesbond.text.DocumentView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:documentView_text="@string/arrayvbunit3"
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#090101"
+            android:text="@string/array"/>
+
+
+        <com.bluejamesbond.text.DocumentView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:documentView_textAlignment="justified"
+         app:documentView_textSize="18sp"
+            app:documentView_textColor="#090101"
+            android:defaultFocusHighlightEnabled="true"
+            app:documentView_textFormat="formatted"
+            app:documentView_insetPaddingLeft="8dp"
+         app:documentView_text="@string/arrayvbunit3"
     />
     <ImageView
         android:layout_width="match_parent"
@@ -17,6 +40,24 @@
         android:src="@drawable/arraysvbnet"/>
     <com.bluejamesbond.text.DocumentView
         android:layout_width="wrap_content"
+        app:documentView_textAlignment="justified"
+        app:documentView_textColor="#090101"
         android:layout_height="wrap_content"
         app:documentView_text="@string/declaringarray"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"
+        android:textColor="#090101"
+        android:text="@string/dynamic_arrays"/>
+    <com.bluejamesbond.text.DocumentView
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:documentView_textColor="#090101"
+        app:documentView_textAlignment="justified"
+        app:documentView_text="@string/dynamicarray" />
+    </LinearLayout>
+</ScrollView>
 </LinearLayout>
