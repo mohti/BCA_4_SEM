@@ -270,8 +270,22 @@ imports system.Data;\n\n
         <u><b>*Visual Studio IDE</b></u>:-
 
     </string>
-    <string name="arrayvbunit3">An array stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type. All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element</string>
-    <string name="declaringarray">Creating Arrays in VB.Net To declare an array in VB.Net, you use the Dim statement. For example, Dim intData(30) \' an array of 31 elements Dim strData(20) As String \' an array of 21 strings Dim twoDarray(10, 20) As Integer \'a two dimensional array of integers Dim ranges(10, 100) \'a two dimensional array You can also initialize the array elements while declaring the array. For example, Dim intData() As Integer = {12, 16, 20, 24, 28, 32} Dim names() As String = {string var} Dim miscData() As Object = {string in double qutos, 12d, 16ui}</string>
+    <string name="arrayvbunit3">An array stores a fixed-size sequential collection of elements of the same type. An array is
+        used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.\n
+        All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element\n</string>
+    <string name="declaringarray">Creating Arrays in VB.Net:-\n\n
+    To declare an array in VB.Net, you use the Dim statement. For example\n
+    Dim intData(30)	  — an array of 31 elements\n
+    Dim strData(20) As String	— an array of 21 strings\n
+    Dim twoDarray(10, 20) As Integer	—a two dimensional array of integers\n
+        Dim ranges(10, 100)	 —a two dimensional array\n
+    You can also initialize the array elements while declaring the array. For example\n\n
+        Dim intData() As Integer = {12, 16, 20, 24, 28, 32}\n
+        "Dim names() As String = {\"mohit\",\"navdeep\"}"
+
+
+    </string>
+    <string name="dynamic_arrays"><B><U>Dynamic Arrays</U></B></string>
     <string name="dynamicarray">
         Dynamic arrays are arrays that can be dimensioned and re-dimensioned as par the need of the program.
         You can declare a dynamic array using the ReDim statemen\n
@@ -285,5 +299,44 @@ imports system.Data;\n\n
 
 
     </string>
+    <string name="test"><B><u>arrayname</u></B> is the name of the array to re-dimension</string>
+    <string name="array"><B><u>Array</u></B></string>
+    <string name="Basic_symbol">Understanding the basic symbols for the register transfer language\n\n
+1. Capital letters are used to denote registers and subscripts denote individual cells of the register.eg A, B.\n\n
+2.Paranthesis used to denote a portion of a register.eg. I (1-5), MBR(AD)\n\n
+3.Arrow must be present in every micro-operation statement and denotes a transfer of the content of the register listed on the right side of the arrow into the register listed on the left side of the arrow.\n\n
+4.Colon denotes a control function and the comma is used to separate two or more micro-operations when executed at the same time.\n
+        Eg. F:A←B,B←A\n\n
+
+        <b>SERIAL TRANSFER</b>\n\n
+For serial transfer, both the source and destination registers are shift-registers.The information is transferred one bit at a time by shifting the bits out of the source register into the destination register. In order not to lose the information stored in the source register it is necessary that the information shifted out of the source register be circulated and shifted back at the same time.\n\n
+The serial transfer of information from Reg B to Reg A is done with shift registers as shown in the block diagram of fig 2.Both the registers A and B are 4-bit registers.The serial output of reg B comes from the output of the rightmost flip-flop B4 .The serial input of reg A goes into the left-most flip-flop A1.When the shift-right control S=1,and a clock pulse occurs,the content of reg A and B are shifted once to the right and the value of B4 transferred to flip-flops A1 and B1.Due to this one bit is transferred from B to A and at the same time one bit is circulated back to reg B.\n\n
+
+        The symbolical notation for the transfer is as follows:\n\n
+S:A1←B4,B1←B4,Ai←Ai-1,Bi←Bi-1   where, i=2,3,4\n\n
+S:A←B,B←B\n\n
+    </string>
+    <string name="Bus_transfer">\n\n<b>BUS TRANSFER</b>\n\n
+In a system with N registers, the transfer from each register to another register requires lines to be connected from the output of each flip-flop in the source register to input of each flip-flop in the destination register.\n
+The fig below shows transfer of data among 3 registers R1, R2, R3. There are six data paths between these 3 registers. If each register consists of N flip-flops, there is a need of 6n lines for parallel transfer from one reg to another. As the number of register increases the number of lines also increases many-folds.\n\n
+    </string>
+    <string name="below_bus">However, if one register is allowed to transfer at a time, we can reduce the number of lines as shown in the next fig where the output and input of each flip-flop of the register is connected to a common line through an electronic circuit that acts like a switch. All the switches are OPEN until a transfer is required. For a transfer of R1R3, switch S3 when closed transfers data from R3 to BUS and then switch S6 when closed transfers the data from BUS to R1.
+This scheme can be extended to registers with n flip -flops and require n common lines since each flip-flop of the register must be connected to one common line.\n\n
+Bus system of data transfer using four registers\n\n
+A group of wires through which binary information is transferred among registers is called a BUS.\n\n
+A bus system is formed with multiplexer circuits. A multiplexer selects data from many lines and directs it to a single output line. The fig shows how four registers are connected through multiplexers to form one set of common bus lines. Each register has 4 bits. Each 4X1 multiplexer has four data input lines, two selection lines, and one output line. Reg A is connected to I0 of the multiplexers, Reg B to I1 and so forth. The selection lines act as control to all the multiplexers such that if xy =00, multiplexer inputs I0 are selected and transferred to the output bus, i.e. 4-bit contents of reg A are transferred to the common bus. Activating the load input of a particular register will cause a transfer of information from the bus into register. When zw=00/01/10/11 then data gets transferred from bus to resp registerA/B/C/D.\n\n
+        xy =10 : BUS←C\n\n
+        zw=01 : R1(A)←BUS\n\n
+    </string>
+    <string name="memory_transfer">\n\n<b>Memory Transfer</b>\n\n
+The transfer of information from memory to the external environment is called a Read Operation.\n\n
+The transfer of information into the memory is called a write operation. In both operations, the particular memory word selected must be specified by an address. MAR a memory address register is connected to the address terminals of the memory.\n\n
+A read micro-operation is a transfer from the selected memory register M into MBR.\n\n
+MBR←M\n\n
+This causes a transfer of one word into MBR from the selected mem reg M whose address is given by the address in MAR.\n\n</string>
+
+
+
+
 
 </resources>
