@@ -122,12 +122,6 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/connection_address_mu"
                 />
-
-
-
-
-
-
         </LinearLayout>
     </ScrollView>
    </LinearLayout>

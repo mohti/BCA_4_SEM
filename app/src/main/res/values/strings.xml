@@ -272,16 +272,16 @@ imports system.Data;\n\n
     </string>
     <string name="arrayvbunit3">An array stores a fixed-size sequential collection of elements of the same type. An array is
         used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.\n
-        All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element\n</string>
-    <string name="declaringarray">Creating Arrays in VB.Net:-\n\n
+        All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element\n\n\n</string>
+    <string name="declaringarray">
     To declare an array in VB.Net, you use the Dim statement. For example\n
-    Dim intData(30)	  — an array of 31 elements\n
-    Dim strData(20) As String	— an array of 21 strings\n
-    Dim twoDarray(10, 20) As Integer	—a two dimensional array of integers\n
-        Dim ranges(10, 100)	 —a two dimensional array\n
-    You can also initialize the array elements while declaring the array. For example\n\n
+    1) Dim intData(30)	  — an array of 31 elements\n
+    2)Dim strData(20) As String	— an array of 21 strings\n
+    3)Dim twoDarray(10, 20) As Integer	—a two dimensional array of integers\n
+        4)Dim ranges(10, 100)	 —a two dimensional array\n\n\n
+    You can also initialize the array elements while declaring the array. For example:-\n\n
         Dim intData() As Integer = {12, 16, 20, 24, 28, 32}\n
-        "Dim names() As String = {\"mohit\",\"navdeep\"}"
+        "Dim names() As String = {\"mohit\",\"navdeep\"}"\n\n
 
 
     </string>
@@ -293,8 +293,8 @@ imports system.Data;\n\n
         ReDim [Preserve] arrayname(subscripts)\n
         Where,\n\n
         The Preserve keyword helps to preserve the data in an existing array, when you resize it.\n
-        <B>arrayname</B> is the name of the array to re-dimension/n
-
+        <B>arrayname</B> is the name of the array to re-dimension\n
+             subscripts specifies the new dimension.\n\n
 
 
 
@@ -334,9 +334,7 @@ The transfer of information into the memory is called a write operation. In both
 A read micro-operation is a transfer from the selected memory register M into MBR.\n\n
 MBR←M\n\n
 This causes a transfer of one word into MBR from the selected mem reg M whose address is given by the address in MAR.\n\n</string>
-
-
-
+    <string name="creating_array_in_vb_net"><b><u>Creating array in vb.net:-</u></b>\n\n</string>
 
 
 </resources>

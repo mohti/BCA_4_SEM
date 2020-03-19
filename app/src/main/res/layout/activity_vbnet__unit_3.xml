@@ -38,6 +38,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/arraysvbnet"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/creating_array_in_vb_net"
+            />
     <com.bluejamesbond.text.DocumentView
         android:layout_width="wrap_content"
         app:documentView_textAlignment="justified"
@@ -58,6 +63,24 @@
         app:documentView_textColor="#090101"
         app:documentView_textAlignment="justified"
         app:documentView_text="@string/dynamicarray" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:src="@drawable/vbdyanamic_array"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When the above code is compiled and executed, it produces the following result −"
+            android:textColor="#090101"
+            android:textSize="20dp"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dynamic_arrayanswer"/>
+
+
+
     </LinearLayout>
 </ScrollView>
 </LinearLayout>
