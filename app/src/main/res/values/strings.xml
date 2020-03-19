@@ -335,6 +335,12 @@ A read micro-operation is a transfer from the selected memory register M into MB
 MBR←M\n\n
 This causes a transfer of one word into MBR from the selected mem reg M whose address is given by the address in MAR.\n\n</string>
     <string name="creating_array_in_vb_net"><b><u>Creating array in vb.net:-</u></b>\n\n</string>
+    <string name="arrayclass"><b><u>The Array Class</u></b>\n
+     The Array class is the base class for all the arrays in VB.Net. It is defined in the System namespace. The Array class provides various properties and methods to work with arrays.\n
+        <u>Properties of the Array Class:-</u>\n
+The following table provides some of the most commonly used properties of the Array class −\n\n
+
+    </string>
 
 
 </resources>
