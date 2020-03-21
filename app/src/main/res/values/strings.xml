@@ -75,6 +75,216 @@ P:A←B\n\n
 The control function P symbolizes the fact that the stated micro-operation is executed by
 the hardware only if P=1.\n</string>
 
+    <string name="Basic_symbol">Understanding the basic symbols for the register transfer language\n\n
+1. Capital letters are used to denote registers and subscripts denote individual cells of the register.eg A, B.\n\n
+2.Paranthesis used to denote a portion of a register.eg. I (1-5), MBR(AD)\n\n
+3.Arrow must be present in every micro-operation statement and denotes a transfer of the content of the register listed on the right side of the arrow into the register listed on the left side of the arrow.\n\n
+4.Colon denotes a control function and the comma is used to separate two or more micro-operations when executed at the same time.\n
+        Eg. F:A←B,B←A\n\n
+
+        <b>SERIAL TRANSFER</b>\n\n
+For serial transfer, both the source and destination registers are shift-registers.The information is transferred one bit at a time by shifting the bits out of the source register into the destination register. In order not to lose the information stored in the source register it is necessary that the information shifted out of the source register be circulated and shifted back at the same time.\n\n
+The serial transfer of information from Reg B to Reg A is done with shift registers as shown in the block diagram of fig 2.Both the registers A and B are 4-bit registers.The serial output of reg B comes from the output of the rightmost flip-flop B4 .The serial input of reg A goes into the left-most flip-flop A1.When the shift-right control S=1,and a clock pulse occurs,the content of reg A and B are shifted once to the right and the value of B4 transferred to flip-flops A1 and B1.Due to this one bit is transferred from B to A and at the same time one bit is circulated back to reg B.\n\n
+
+        The symbolical notation for the transfer is as follows:\n\n
+S:A1←B4,B1←B4,Ai←Ai-1,Bi←Bi-1   where, i=2,3,4\n\n
+S:A←B,B←B\n\n
+    </string>
+    <string name="Bus_transfer">\n\n<b>BUS TRANSFER</b>\n\n
+In a system with N registers, the transfer from each register to another register requires lines to be connected from the output of each flip-flop in the source register to input of each flip-flop in the destination register.\n
+The fig below shows transfer of data among 3 registers R1, R2, R3. There are six data paths between these 3 registers. If each register consists of N flip-flops, there is a need of 6n lines for parallel transfer from one reg to another. As the number of register increases the number of lines also increases many-folds.\n\n
+    </string>
+    <string name="below_bus">However, if one register is allowed to transfer at a time, we can reduce the number of lines as shown in the next fig where the output and input of each flip-flop of the register is connected to a common line through an electronic circuit that acts like a switch. All the switches are OPEN until a transfer is required. For a transfer of R1R3, switch S3 when closed transfers data from R3 to BUS and then switch S6 when closed transfers the data from BUS to R1.
+This scheme can be extended to registers with n flip -flops and require n common lines since each flip-flop of the register must be connected to one common line.\n\n
+Bus system of data transfer using four registers\n\n
+A group of wires through which binary information is transferred among registers is called a BUS.\n\n
+A bus system is formed with multiplexer circuits. A multiplexer selects data from many lines and directs it to a single output line. The fig shows how four registers are connected through multiplexers to form one set of common bus lines. Each register has 4 bits. Each 4X1 multiplexer has four data input lines, two selection lines, and one output line. Reg A is connected to I0 of the multiplexers, Reg B to I1 and so forth. The selection lines act as control to all the multiplexers such that if xy =00, multiplexer inputs I0 are selected and transferred to the output bus, i.e. 4-bit contents of reg A are transferred to the common bus. Activating the load input of a particular register will cause a transfer of information from the bus into register. When zw=00/01/10/11 then data gets transferred from bus to resp registerA/B/C/D.\n\n
+        xy =10 : BUS←C\n\n
+        zw=01 : R1(A)←BUS\n\n
+    </string>
+    <string name="memory_transfer">\n<b>Memory Transfer</b>\n\n
+The transfer of information from memory to the external environment is called a Read Operation.\n\n
+The transfer of information into the memory is called a write operation. In both operations, the particular memory word selected must be specified by an address. MAR a memory address register is connected to the address terminals of the memory.\n\n
+A read micro-operation is a transfer from the selected memory register M into MBR.\n\n
+MBR←M\n\n
+This causes a transfer of one word into MBR from the selected mem reg M whose address is given by the address in MAR.\n\n</string>
+
+
+    <string name="A_write_micro_operation">\n A write micro-operation is a transfer from MBR to the selected memory word M.This is shown symbolically as\n\n
+M←MBR\n\n
+This causes the transfer of a word from MBR into the mem reg M whose address is given by the address in MAR.\n\n
+MBR←M[R1]\n\n
+Denotes a read operation from the memory word whose address is specified by the reg R1.\n\n
+
+ARITHMETIC MICRO-OPERATIONS\n\n
+ALU (Arithmetic and Logic Unit) –\n\n\n
+        <b>Arithmetic Circuit:</b>\n\n</string>
+
+    <string name="The_ALU">\n
+The ALU, Arithmetic and Logic Unit carry out the arithmetic and logic functions over the content of operands stored in register and memory. The general arithmetic functions are: addition, subtraction, increment, decrement etc.; whereas negotiation, AND, OR, XOR are the general logical operations that are carried out by this unit. An ALU is associated with a set of micro – instructions where every micro – instruction carried out a specific task.\n\n
+</string>
+
+    <string name="Arithmetic_Circuit">\n
+<b>Arithmetic Circuit:</b> A binary parallel adder can be used to perform some fundamental arithmetic operation over the operands. Thus, a simple arithmetic circuit can be constructed with the help of parallel adder and by providing different inputs in form of A, B and Ci, many arithmetic operations can be carried out. Some fundamental arithmetic operations can be obtained by a parallel adder is shown in figure –\n\n
+</string>
+
+    <string name="Logic">\n
+        <b><u>Logic Circuit:</u></b></string>
+
+    <string name="Logic_Circuit">\n
+<b><u>Logic Circuit:</u></b> A logic unit basically carries out logical operations over the content of CPU registers. The given figure illustrates a simple logic circuit created with the help of some fundamental gates and a multiplexer. The circuit accepts two inputs Ai and Bi (a bit of value A and value B) and with reference to control S1 and S0, perform a relevant logic operations as depicted in table. When S1, S0 equals 00, the unit produces A.B output.\n\n
+
+This one stage of the logic circuit can be repeated n number of times to carry out logic operation over n – bit data.\n\n
+
+<u><b>Truth table for 16 functions of two variables</b></u>
+</string>
+
+    <string name="F0">\n
+F0=All 0’s \n\n
+F1=x and y \n\n
+F2=xy’ \n\n
+F3=xy’+xy=x(y+y’)=x \n\n
+F4=x’y \n\n
+F5=x’y+xy=y(x’+x)=y \n\n
+F6=x xor y \n\n
+F7=x or y \n\n
+F8=x nor y \n\n
+F9=x xnor y \n\n
+F10=x’y’+xy’=y’(x’+x)=y’ \n\n
+F11=x’y’+xy’+xy=y’+xy \n\n
+F12=x’y’+x’y=x’(y’+y)=x’ \n\n
+F13=x’y’+x’y+xy=x’+xy \n\n
+F14=x nand y \n\n
+F15=All 1’s \n\n
+
+<u><b>Arithmetic and Logic Unit –</b></u>\n\n
+</string>
+
+    <string name="The_ALU_can">\n
+The ALU can be constructed by simply combining the arithmetic unit along with the logic unit to carry out the arithmetic and logic operations. Figure illustrate a typical ALU where it comprises of one stage of arithmetic unit and one stage of logic unit connected to a 2x1 multiplexer. The circuit now has an additional control S2 which selects one of the operation i.e., arithmetic or logic produced at output. On whole the circuit now comprises of three controls S2, S1 and S0 that selects a arithmetic or logic operation. The arithmetic operation selection is also depending on the carry input Ci. The table below shows all the operations that are carried out in the above circuit.\n\n
+</string>
+
+
+<string name="CONTROL_FUNCTIONS">\n
+<u><b>CONTROL FUNCTIONS</b></u>\n\n
+    The timig of all registers in a synchronous digital system is controlled by a master clock generator,whose clock pulse are applied to all flip-flops in the system. The binary variables that control the enable inputs of registers are called control functions.\n\n
+    The hardware control network that generates control functions can be organized in three different ways\n\n
+    1) As a sequential circuit\n
+    2) As a sequence of timing signals coupled with control conditions\n
+    3) As a control memory\n\n
+    <u><b>TIMING SEQUENCES</b></u>\n\n
+    Timing signals that control the sequence of operations in a digital computer can be generated with a binary counter and a decoder.\n\n
+    </string>
+
+    <string name="Generation">\n
+<u><b>Generation of control functions</b></u>\n\n
+
+    \n\n
+    Each computer cycle is associated with a sequence of micro-operations. These micro-operations are controlled by the timing signals and other binary conditions in the system .The Boolean functions that generate the control decisions are the control functions.For eg\n\n
+    T1: MBR←M\n\n
+    T1=read-control input for memory unit\n\n
+    FT1+R’T3: A←B\n\n
+    The control function being a Boolean function can be generated with logic gates as shown in the fig below. The gates that generate the control function go to the load input of reg A to initiate the transfer. The condition may also initiate the same transfer.\n
+</string>
+
+    <string name="BASIC_COMPUTER">\n
+<u><b>BASIC COMPUTER ORGANIZATION AND DESIGN</b></u>\n\n
+    <b>Instruction codes</b>\n\n
+
+    The internal organization of a computer system is defined by the sequence of micro-operations it performs on data stored in registers. A digital computer is a general purpose digital system. The user of such a system can control the process by means of a
+    program, that is a set of instructions that specifies the operations, operands and the sequence by which processing has to occur.\n\n
+    An instruction code is a group of bits that tell the computer to perform a specific operation. It is usually divided into more than one field ,the most basic of them being the operation field. The operation field specifies operations such as add, sub, shift left, logical and etc.\n\n
+    At this point we must clearly understand the relation between an operation and a micro-operation. An operation is a part of an instruction stored in computer memory. It is a binary code that tells the computer to perform a specific operation. The control unit receives the instruction from memory and interprets the operation code bits. It then issues a sequence of control functions that perform micro-operations in internal computer registers. For every operation code, the control issues a sequence of micro-operations needed for the hardware implementation of the specified operation. Due to this reason operation code is also referred to as macro-operation because it specifies a set of micro-operations.\n\n
+    Fig depicts an organization. Instructions are stored in one section of memory and data in another. For a memory unit with 4096 words we need 12 bits for address since 212 =4096. If we store each instruction code in one 16-bit memory word, then we have four bits available for 16 possible operations and 12 bits to specify the address of the operand over which the operation will execute.\n\n
+</string>
+
+    <string name="Demonstration">\n
+<u><b>Demonstration of direct and indirect instructions</b></u>\n\n
+
+    It is sometimes convenient to use the address bits of an instruction code not as an address but as the actual operand. When the second part of an instruction code specifies an operand, the instruction is said to have an immediate operand. When the second part specifies the address of an operand, the instruction is said to have a direct address. The third possibility is an indirect address, where the bits in the second part of the instruction designate an address of a memory word in which the address of the operand is found. The MSB generally differentiates between a direct or an indirect instruction format.\n\n
+    To illustrate the concept let us take an example of an instruction code format\n\n
+    It consists of a three-bit operation code designated by OP, a six-bit address part designated by AD, and an indirect-address mode designated by I. If I=0 it designates a direct address and if a 1 indicates indirect address.\n\n
+    A direct address instruction is shown in fig.2(b). It is placed in address 2 in memory. The I bit is 0,so the instruction is recognized as a direct address instruction. Since the address part Ad is equal to binary equivalent of 9(001001),the control finds the operand in memory at address 9. In fig 2(c) I=1 ,therefore it is a indirect address instruction. The address part is 9 so the control goes to 9 and finds the address of operand. The indirect address instruction needs two references to memory to fetch an operand.\n\n
+</string>
+
+    <string name="Computer_Instructions">\n
+<u><b>Computer Instructions</b></u>\n\n
+
+    Computer instructions are stored in consecutive memory locations and are executed sequentially one at a time. The control reads an instruction from a specific address in memory and executes it and then continues onto the next instruction in sequence and so on. Memory words cannot communicate with the processor directly without going through an address and buffer register. It is also necessary to provide a register in control unit for storing operation codes after they are read from memory.\n\n
+</string>
+
+    <string name="The_memory">\n
+
+The memory unit has a capacity of 4096 words and each word contains 16 bits. Twelve words are needed to specify the address of an operand. This leaves four bits for the operation part of the instruction. However, only 3 bits will be used to specify the operation code. Where the fourth bit will be used as a direct an indirect address bit. The memory buffer register (MBR) consists of 16 bits ,as does the accumulator register. The E register is an extension of the accumulator and will be used during shift operations for end around carry. The I register has a single cell for storing the mode bit and the operation register OPR stores the three-bit operation code from memory.\n\n
+The memory address register (MAR)has 12 bits storing the 12 bit of the address. The program counter(PC) is also 12 bit long since it stores the address of the next address to be fetched by the processor. This register goes through a counting sequence and causes the computer to read sequential instructions stored in memory.\n\n
+To read an instruction, the content of PC is transferred to MAR, a memory read cycle is initiated, and the PC is incremented by 1.This place the instruction code into MBR and prepares PC for the address of the next instruction. The operation code is transferred to OPR, the mode bit into I and the address part into MAR.\n\n
+The basic computer has three different instruction code formats. The operation part contains three bits; the meaning of the remaining thirteen bits depends on the operation code encountered.\n\n
+</string>
+
+    <string name="A_computer_should">\n
+A computer should have all the necessary and sufficient operations to carry out any conceivable processing task. It should contain instructions in each of the following categories:\n\n
+1. Arithmetic, logic, and shift micro operations\n
+2. Instructions for moving info to and from memory and processor registers\n
+3. Instruction that check status info to provide decision making capabilities.\n
+4. Input and output instructions.\n
+5. The capability of stopping computer.\n\n
+
+<b>TIMING and CONTROL</b>\n\n
+
+When an instruction is read from memory, the computer is said to be in an instruction fetch cycle. When the word read from memory is an address of an operand the computer is in an indirect cycle. When the word read from the memory is an operand, the computer is in a data execute cycle. It is the function of the control to keep track of the various cycles.\n\n
+The control unit uses two flip-flops to distinguish between the three cycles. These flip-flops are denoted by the letters F and R. A 2X4 decoder associated with these flip-flops provide four outputs , three of which can be used to differentiate between the above mentioned cycles.\n\n
+The block diagram of the control unit for the basic computer is show in fig. The timing in the computer is generated by a 2-bit sequence counter(SC) and a 2X4 decoder. The timing signals out of the decoder are designated by t0,t1,t2 and t3.\n\n
+</string>
+
+    <string name="TIMING"><u><b>TIMING and CONTROL</b></u>\n\n</string>
+
+    <string name="A_digital">\n
+A digital computer operates over a given set of instructions to accomplish a problem solution. The instruction comprises of a sequence of micro operations that are needed to be carried out when the instruction is executed.\n\n
+The unit of CPU that generates the sequence of micro operations for a given instruction is termed timing and control unit. A simple computer system CPU comprises of four machine cycle: Fetch Cycle, Indirect Cycle, Execute Cycle and Interrupt Cycle.\n\n
+Figure illustrates a typical control unit block diagram. It consist of a control logic circuit associated with several functional blocks generating various control functions for a given instruction. It consists of following:\n\n
+1. 3 x 8 Decoder: It accepts the three bit operation code of instruction and accordingly generate control signals q0……….q7. For example, if OPr is 011 than q3 is enable.\n\n
+2. I: It is the indirect flip – flop that accept a value from I field of instruction. If I is 1 than q7 is determine. If q7 is 1 than an I–O instruction is carried out. If I is 0 and q7 is 1 than a register operation is carried out.\n\n
+3. 2 x 4 Timing Decoder: This decoder provides four clocks t0 – t3, i.e., every cycle comprises of four clocks. This decoder is driven by the sequence counter SC and by a enable flip – flop S. if S is 1 than only the cycle is executed.\n\n
+4. 2 x 4 Decoder (Control 2 x4 Decoder): This decoder accepts F and R bits and depending on their values generates the respective cycle as depicted in table.\n\n
+C0 t0 : MAR ← PC\n\n
+C0 t1 : MBR ← M, PC ← PC + 1\n\n
+C0 t2 : OPR ← MBR (OP), I ← MBR (2)\n\n
+q\'7 IC0t3 : R ← 1\n\n
+(q7 + I\’) C0t3 : F ← 1\n\n</string>
+    <string name="Fetch_Cycle">\n
+<b>Fetch Cycle:</b> It is the first machine cycle of every instruction cycle. The task of this cycle is to fetch the instruction from the memory, to decode it and then to call the relevant machine cycle as either executes cycle or indirect cycle. The various tasks performed in fetch cycle at different clocks are shown above. In first clock to the content of program counter is transfer to MAR. In second clock t1, two tasks are carried out, i.e. the program counter is incremented by one as well as the memory location is read out in MBR. In third clock t2, the I and OP fields are filled up from fetched instruction. In fourth clock t3, the design is taken to call indirect cycle or execute cycle. This design is based on q7 and I. if q7 = 0 and I = 1 then indirect cycle is called else the execute cycle is called.\n\n
+<b>Indirect cycle:</b>\n\n
+
+C1 t0 : MAR ← MBR (ADDR)\n\n
+C1 t1 : MBR ← M\n\n
+C1 t2 : NOP\n\n
+C1 t3 : F ← 1, R ← 0\n\n</string>
+
+<string name="The_indirect">\n
+The indirect cycle is used to fetch the address of operand. The indirect cycle receives the pointer value from fetch cycle. In the given machine C1 represents the indirect cycle. On the first clock of this machine cycle the address part obtained from the fetch cycle is used to get the address of operand, it is done in second cycle. The third cycle is NOP (No OPeration). The fourth cycle is used to call the execute cycle.\n\n
+
+<u>ADD to AC (Accumulator)</u>\n\n
+q1 C2 t0 : MAR ← MBR (AD)\n\n
+q1 C2 t1 : MBR ← M\n\n
+q1 C2 t2 : EAC ← AC + MBR\n\n
+q1 c2 t3 : Fetch Cycle Call\n\n
+<b>Instruction Cycle:</b>
+An instruction cycle is a composition of various machine cycles. The general machine cycles are:\n\n
+1. Fetch instruction\n\n
+2. Decode instruction\n\n
+3. Fetch Operand if any\n\n
+4. Store results.\n\n
+Every machine cycle in term is a composition of clocks where on each clock micro operations are carried out.\n\n
+</string>
+
+    <string name="Interrupts"><u>Interrupts</u> –\n
+An interrupt is a signalling mechanism by which the external entity or the internal program itself can as the CPU to perform some special services that are dedicates routines or called Interrupt Service Routine (ISR).\n\n
+A computer system comprises of two types of interrupt called the Hardware Interrupt and Software Interrupt. The interrupt that are generated over the pin of a CPU (Microprocessor) are termed hardware interrupt whereas the interrupt generated programmatically are termed software interrupt.\n\n
+The interrupt may be vector or non – vector. If the service routine address of an interrupt is fixed that is assign with a fixed address than is called a non – vector interrupt else if the address of interrupt is provided by the interrupting device than it is called a vector interrupt.\n\n
+Figure illustrates a flow chart for interrupt handling. Initially the CPU waits for an instruction. When an instruction is submitted the fetch and execute cycles are performed i.e. the instruction cycle is carried out. At the end of instruction cycle the interrupt status is checked. If more than one interrupts are there than their priority are resolved and the interrupt with highest priority is served.\n\n
+Calling an executive interrupt service routine:\n\n
+Once the interrupt is identified the CPU saves the content of register onto the stack, transfer the control to ISR, disable interrupts, and services interrupt enable the interrupt and reload the saved register values and contents.\n\n
+</string>
 
     <string name="graphics_unit1_firstsagment">
     what is computer Graphics\n
@@ -301,39 +511,7 @@ imports system.Data;\n\n
     </string>
     <string name="test"><B><u>arrayname</u></B> is the name of the array to re-dimension</string>
     <string name="array"><B><u>Array</u></B></string>
-    <string name="Basic_symbol">Understanding the basic symbols for the register transfer language\n\n
-1. Capital letters are used to denote registers and subscripts denote individual cells of the register.eg A, B.\n\n
-2.Paranthesis used to denote a portion of a register.eg. I (1-5), MBR(AD)\n\n
-3.Arrow must be present in every micro-operation statement and denotes a transfer of the content of the register listed on the right side of the arrow into the register listed on the left side of the arrow.\n\n
-4.Colon denotes a control function and the comma is used to separate two or more micro-operations when executed at the same time.\n
-        Eg. F:A←B,B←A\n\n
 
-        <b>SERIAL TRANSFER</b>\n\n
-For serial transfer, both the source and destination registers are shift-registers.The information is transferred one bit at a time by shifting the bits out of the source register into the destination register. In order not to lose the information stored in the source register it is necessary that the information shifted out of the source register be circulated and shifted back at the same time.\n\n
-The serial transfer of information from Reg B to Reg A is done with shift registers as shown in the block diagram of fig 2.Both the registers A and B are 4-bit registers.The serial output of reg B comes from the output of the rightmost flip-flop B4 .The serial input of reg A goes into the left-most flip-flop A1.When the shift-right control S=1,and a clock pulse occurs,the content of reg A and B are shifted once to the right and the value of B4 transferred to flip-flops A1 and B1.Due to this one bit is transferred from B to A and at the same time one bit is circulated back to reg B.\n\n
-
-        The symbolical notation for the transfer is as follows:\n\n
-S:A1←B4,B1←B4,Ai←Ai-1,Bi←Bi-1   where, i=2,3,4\n\n
-S:A←B,B←B\n\n
-    </string>
-    <string name="Bus_transfer">\n\n<b>BUS TRANSFER</b>\n\n
-In a system with N registers, the transfer from each register to another register requires lines to be connected from the output of each flip-flop in the source register to input of each flip-flop in the destination register.\n
-The fig below shows transfer of data among 3 registers R1, R2, R3. There are six data paths between these 3 registers. If each register consists of N flip-flops, there is a need of 6n lines for parallel transfer from one reg to another. As the number of register increases the number of lines also increases many-folds.\n\n
-    </string>
-    <string name="below_bus">However, if one register is allowed to transfer at a time, we can reduce the number of lines as shown in the next fig where the output and input of each flip-flop of the register is connected to a common line through an electronic circuit that acts like a switch. All the switches are OPEN until a transfer is required. For a transfer of R1R3, switch S3 when closed transfers data from R3 to BUS and then switch S6 when closed transfers the data from BUS to R1.
-This scheme can be extended to registers with n flip -flops and require n common lines since each flip-flop of the register must be connected to one common line.\n\n
-Bus system of data transfer using four registers\n\n
-A group of wires through which binary information is transferred among registers is called a BUS.\n\n
-A bus system is formed with multiplexer circuits. A multiplexer selects data from many lines and directs it to a single output line. The fig shows how four registers are connected through multiplexers to form one set of common bus lines. Each register has 4 bits. Each 4X1 multiplexer has four data input lines, two selection lines, and one output line. Reg A is connected to I0 of the multiplexers, Reg B to I1 and so forth. The selection lines act as control to all the multiplexers such that if xy =00, multiplexer inputs I0 are selected and transferred to the output bus, i.e. 4-bit contents of reg A are transferred to the common bus. Activating the load input of a particular register will cause a transfer of information from the bus into register. When zw=00/01/10/11 then data gets transferred from bus to resp registerA/B/C/D.\n\n
-        xy =10 : BUS←C\n\n
-        zw=01 : R1(A)←BUS\n\n
-    </string>
-    <string name="memory_transfer">\n\n<b>Memory Transfer</b>\n\n
-The transfer of information from memory to the external environment is called a Read Operation.\n\n
-The transfer of information into the memory is called a write operation. In both operations, the particular memory word selected must be specified by an address. MAR a memory address register is connected to the address terminals of the memory.\n\n
-A read micro-operation is a transfer from the selected memory register M into MBR.\n\n
-MBR←M\n\n
-This causes a transfer of one word into MBR from the selected mem reg M whose address is given by the address in MAR.\n\n</string>
     <string name="creating_array_in_vb_net"><b><u>Creating array in vb.net:-</u></b>\n\n</string>
     <string name="arrayclass"><b><u>The Array Class</u></b>\n
      The Array class is the base class for all the arrays in VB.Net. It is defined in the System namespace. The Array class provides various properties and methods to work with arrays.\n
@@ -410,6 +588,5 @@ Dim lastTime, nextTime As Date\n
 
 
     </string>
-
 
 </resources>
