@@ -5,9 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vbnetActivities.vbnet_Unit_2">
-<com.codesgood.views.JustifiedTextView
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
 
-    android:text="@string/test"/>
+    android:text="@string/unit2vbvar"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:text="@string/variable_declaration_in_vb_net"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+
+          android:text="@string/vardeclarationunit2"
+          />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

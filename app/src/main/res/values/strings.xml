@@ -341,6 +341,75 @@ This causes a transfer of one word into MBR from the selected mem reg M whose ad
 The following table provides some of the most commonly used properties of the Array class −\n\n
 
     </string>
+    <string name="adonet">ADO.NET provides a bridge between the front end controls and the back end database. The ADO.NET objects encapsulate all the data access operations and the controls interact with these objects to display data, thus hiding the details of movement of data.\n\n
+    The following figure shows the ADO.NET objects at a glance:\n
+
+
+    </string>
+    <string name="unit2vbvar">A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in VB.Net has a specific type, which determines the size and layout of the variable\'s memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.\n
+        We have already discussed various data types. The basic value types provided in VB.Net can be categorized as \n\n
+        1)Integral types	    :- SByte, Byte, Short, UShort, Integer, UInteger, Long, ULong and Char\n
+        2)Floating point type :- Single and Double\n
+        3)Decimal types       :- Decimal\n
+        4)Boolean types       :-True or False values, as assigned\n
+        5)Date types	   :-Date\n\n\n
+        VB.Net also allows defining other value types of variable like Enum and reference types of variables like Class. \n\n
+
+
+
+
+
+
+
+
+
+
+
+    </string>
+    <string name="variable_declaration_in_vb_net">Variable Declaration in VB.Net</string>
+    <string name="vardeclarationunit2">The Dim statement is used for variable declaration and storage allocation for one or more variables. The Dim statement is used at module, class, structure, procedure or block level.\n\n
+    Syntax for variable declaration in VB.Net is −\n
+        [  attributelist ] [ accessmodifier ] [[ Shared ] [ Shadows ] | [ Static ]]\n
+            [ ReadOnly ] Dim [ WithEvents ] variablelist\n\\n
+Where\n\n
+        #attributelist is a list of attributes that apply to the variable. Optional.\n
+        #accessmodifier defines the access levels of the variables, it has values as - Public, Protected, Friend, Protected Friend and Private. Optional.\n
+        #Shared declares a shared variable, which is not associated with any specific instance of a class or structure, rather available to all the instances of the class or structure. Optional.\n
+        #Shadows indicate that the variable re-declares and hides an identically named element, or set of overloaded elements, in a base class. Optional.\n
+        #Static indicates that the variable will retain its value, even when the after termination of the procedure in which it is declared. Optional.\n
+        #ReadOnly means the variable can be read, but not written. Optional.\n
+        #WithEvents specifies that the variable is used to respond to events raised by the instance assigned to the variable. Optional.\n
+        #Variablelist provides the list of variables declared.\n\n
+        Some valid variable declarations along with their definition are shown here −\n\n
+
+Dim StudentID As Integer\n
+Dim StudentName As String\n
+Dim Salary As Double\n
+Dim count1, count2 As Integer\n
+Dim status As Boolean\n
+Dim exitButton As New System.Windows.Forms.Button\n
+Dim lastTime, nextTime As Date\n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </string>
 
 
 </resources>
