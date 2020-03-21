@@ -29,7 +29,25 @@
 
           android:text="@string/vardeclarationunit2"
           />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
 
+    android:text="@string/datatypenvmet"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Data Types Available in VB.Net"/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/datatypeexvb"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/operatorsvbnet"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

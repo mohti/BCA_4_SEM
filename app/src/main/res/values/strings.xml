@@ -588,5 +588,40 @@ Dim lastTime, nextTime As Date\n
 
 
     </string>
+    <string name="datatypenvmet">Data types refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted.\n
+
+
+</string>
+    <string name="datatypeexvb">VB.Net provides a wide range of data types. The following table shows all the data types available −\n
+
+    Boolean	,Byte,Char,Date,Decimal,Double,Integer,Long	,Object,SByte,Short,Single,Strin,UInteger,ULong,User-Defined,UShort	\n\n
+
+
+
+
+
+
+
+    </string>
+    <string name="operatorsvbnet">
+        An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. VB.Net is rich in built-in operators and provides following types of commonly used operators −\n
+
+# Arithmetic Operators\n
+
+# Comparison Operators\n
+
+# Logical/Bitwise Operators\n
+
+# Bit Shift Operators\n
+
+# Assignment Operators\n
+
+# Miscellaneous Operators\n
+
+
+
+
+
+    </string>
 
 </resources>
