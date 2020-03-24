@@ -48,6 +48,56 @@
                 android:layout_height="wrap_content"
 
                 android:text="@string/operatorsvbnet"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Control Structures"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="If...Then...Else Statement"/>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  android:text="@string/vbnetifelse"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:src="@drawable/ifelsevb"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="The If...Else If...Else Statement
+               "/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/ifelseifelseinvb"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="22sp"
+                   android:text="Select case statement"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selectvbcase"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:src="@drawable/switchcasevb"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:src="@drawable/switchcaseexvb"/>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

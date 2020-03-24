@@ -623,5 +623,55 @@ Dim lastTime, nextTime As Date\n
 
 
     </string>
+    <string name="vbnetifelse">An If statement can be followed by an optional Else statement, which executes when the Boolean expression is false.\n\
+    Syntax\n\n
+        The syntax of an If...Then... Else statement in VB.Net is as follows −\n
+        If(boolean_expression)Then\n
+           statement(s) will execute if the Boolean expression is true \n
+        Else\n
+          statement(s) will execute if the Boolean expression is false \n
+        End If\n\n\n
+
+        If the Boolean expression evaluates to true, then the if block of code will be executed, otherwise else block of code will be executed.\n
+    </string>
+    <string name="ifelseifelseinvb">An If statement can be followed by an optional Else if…Else statement, which is very useful to test various conditions using single If…Else If statement.\n
+    When using If… Else If... Else statements, there are few points to keep in mind.\n
+        1.An If can have zero or one Else\'s and it must come after an Else Ifs.\n
+        2.An If can have zero to many Else If\'s and they must come before the Else.\n
+        3.Once an Else if succeeds, none of the remaining Else If\'s or Else\'s will be tested.\n\n
+
+
+        The syntax of an if...else if...else statement in VB.Net is as follows −\n\n
+
+
+If(boolean_expression 1)Then\n
+           \' Executes when the boolean expression 1 is true \n
+        ElseIf( boolean_expression 2)Then\n
+            Executes when the boolean expression 2 is true \n
+        ElseIf( boolean_expression 3)Then\n
+         Executes when the boolean expression 3 is true \n
+        Else \n
+        \'  executes when the none of the above condition is true \n
+        End If\n\n
+    </string>
+    <string name="selectvbcase">A Select Case statement allows a variable to be tested for equality against a list of values. Each value is called a case, and the variable being switched on is checked for each select case.\n
+    The syntax for a Select Case statement in VB.Net is as follows −\n
+        Select [ Case ] expression\n
+           [ Case expressionlist\n
+              [ statements ] ]\n
+           [ Case Else\n
+              [ elsestatements ] ]\n
+        End Select\n
+
+
+
+
+
+
+
+
+
+
+    </string>
 
 </resources>
