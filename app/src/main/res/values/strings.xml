@@ -673,5 +673,192 @@ If(boolean_expression 1)Then\n
 
 
     </string>
+    <string name="fornextvb">It repeats a group of statements a specified number of times and a loop index counts the number of loop iterations as the loop executes.\n
+    The syntax for this loop construct is −\n\n
+For counter [ As datatype ] = start To end [ Step step ]\n
+           [ statements ]\n
+           [ Continue For ]\n
+           [ statements ]\n
+           [ Exit For ]\n
+   [ statements ]\n
+        Next [ counter ]\n
+
+       Module loops\n
+   Sub Main()\n
+      Dim a As Byte\n
+      \' for loop execution\n
+      For a = 10 To 20\n
+          Console.WriteLine("value of a: {0}", a)\n
+      Next\n
+      Console.ReadLine()\n
+   End Sub\n
+End Module\n\n\n\n
+When the above code is compiled and executed, it produces the following result −\n\n
+
+value of a: 10\n
+value of a: 11\n
+value of a: 12\n
+value of a: 13\n
+value of a: 14\n
+value of a: 15\n
+value of a: 16\n
+
+value of a: 17\n
+value of a: 18\n
+value of a: 19\n
+value of a: 20\n
+
+
+
+
+
+
+
+
+
+    </string>
+    <string name="eachnextloop">
+
+
+        It repeats a group of statements for each element in a collection. This loop is used for accessing and manipulating all elements in an array or a VB.Net collection.\n\n
+
+The syntax for this loop construct is −\n\n
+
+For Each element [ As datatype ] In group\n
+   [ statements ]\n
+   [ Continue For ]\n
+   [ statements ]\n
+   [ Exit For ]\n
+   [ statements ]\n
+Next [ element ]\n
+Example\n
+Live Demo\n
+Module loops\n
+   Sub Main()\n
+      Dim anArray() As Integer = {1, 3, 5, 7, 9}\n
+      Dim arrayItem As Integer\n
+        \'displaying the values\n\n\n
+
+      For Each arrayItem In anArray\n
+         Console.WriteLine(arrayItem)\n
+
+      Next\n
+      Console.ReadLine()\n
+   End Sub\n
+End Module\n
+When the above code is compiled and executed, it produces the following result −\n\n
+
+1\n
+3\n
+5\n
+7\n
+9\n
+
+
+
+
+
+    </string>
+    <string name="doloopinvb">
+       do loop-\n
+
+        it repeats the enclosed block of statements while a Boolean condition is True or until the condition becomes True. It could be terminated at any time with the Exit Do statement.\n\n
+
+The syntax for this loop construct is −\n\n
+
+Do { While | Until } condition\n
+   [ statements ]\n
+   [ Continue Do ]\n
+   [ statements ]\n
+   [ Exit Do ]\n
+   [ statements ]\n
+
+Loop\n
+-or-\n
+
+Do\n
+   [ statements ]\n
+   [ Continue Do ]\n
+   [ statements ]\n
+   [ Exit Do ]\n
+   [ statements ]\n
+Loop { While | Until } condition\n
+
+Example\n\n
+Module loops\n
+   Sub Main()\n
+      \' local variable definition \n
+      Dim a As Integer = 10\n
+      \'do loop execution \n
+      Do\n
+          Console.WriteLine("value of a: {0}", a)\n
+          a = a + 1\n
+      Loop While (a &lt; 20)\n
+      Console.ReadLine()\n
+   End Sub\n
+End Module\n
+When the above code is compiled and executed, it produces the following result −\n\n
+
+value of a: 10\n
+value of a: 11\n
+value of a: 12\n
+value of a: 13\n
+value of a: 14\n
+value of a: 15\n
+value of a: 16\n
+value of a: 17\n
+value of a: 18\n
+value of a: 19\n
+The program would behave in same way, if you use an Until statement, instead of While −\n\n
+
+
+Module loops\n
+   Sub Main()\n
+      \' local variable definition\n
+      Dim a As Integer = 10\n
+     \ 'do loop execution\n
+
+      Do\n\n
+          Console.WriteLine("value of a: {0}", a)\n
+          a = a + 1\n
+      Loop Until (a = 20)\n
+      Console.ReadLine()\n
+   End Sub\n
+End Module\n
+When the above code is compiled and executed, it produces the following result −\n\n
+
+value of a: 10\n
+value of a: 11\n
+value of a: 12\n
+value of a: 13\n
+value of a: 14\n
+value of a: 15\n
+value of a: 16\n
+value of a: 17\n
+value of a: 18\n
+value of a: 19\n
+
+
+
+
+    </string>
+    <string name="whilenwetloop">
+        While While next \n\n
+         It    executes a series of statements as long as a given condition is True.\n\n
+
+The syntax for this loop construct is −\n\n
+
+While condition\n
+   [ statements ]\n
+   [ Continue While ]\n
+   [ statements ]\n
+   [ Exit While ]\n
+   [ statements ]\n
+End While\n
+Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is logical true. The loop iterates while the condition is true.\n\n
+
+
+    </string>
+
 
 </resources>
