@@ -8,34 +8,42 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".vbnetActivities.vbnet_Unit_5"></activity>
-        <activity android:name=".vbnetActivities.vbnet_Unit_4" />
-        <activity android:name=".vbnetActivities.vbnet_Unit_3" />
-        <activity android:name=".vbnetActivities.vbnet_Unit_2" />
-        <activity android:name=".vbnetActivities.vbnet_Unit_1" />
-        <activity android:name=".conam_activities.conam_Unit_5" />
-        <activity android:name=".conam_activities.conam_Unit_4" />
-        <activity android:name=".conam_activities.conam_Unit_3" />
-        <activity android:name=".conam_activities.conam_Unit_2" />
-        <activity android:name=".conam_activities.conam_Unit_1" />
-        <activity android:name=".os_Activities.os_Unit_5" />
-        <activity android:name=".os_Activities.os_Unit_4" />
-        <activity android:name=".os_Activities.os_Unit_3" />
-        <activity android:name=".os_Activities.os_Unit_2" />
-        <activity android:name=".os_Activities.os_unit_1" />
-        <activity android:name=".unit_coa.Unit5_coa" />
-        <activity android:name=".unit_coa.Unit4_coa" />
-        <activity android:name=".unit_coa.Unit3_coa" />
-        <activity android:name=".unit_coa.unit2_coa" />
-        <activity android:name=".graphicsActivities.graphics_unit_5" />
-        <activity android:name=".graphicsActivities.graphics_unit_4" />
-        <activity android:name=".graphicsActivities.graphics_unit_3" />
-        <activity android:name=".graphicsActivities.graphics_unit_2" />
-        <activity android:name=".graphicsActivities.graphics_unit_1" />
-        <activity android:name=".Unit1_COA" />
-        <activity android:name=".Home" />
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".vbnetActivities.vbnet_Unit_5"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity android:name=".vbnetActivities.vbnet_Unit_4" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".vbnetActivities.vbnet_Unit_3" android:configChanges="orientation|screenSize" />
+        <activity android:name=".vbnetActivities.vbnet_Unit_2" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".vbnetActivities.vbnet_Unit_1" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".conam_activities.conam_Unit_5" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".conam_activities.conam_Unit_4" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".conam_activities.conam_Unit_3" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".conam_activities.conam_Unit_2" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".conam_activities.conam_Unit_1" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".os_Activities.os_Unit_5" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".os_Activities.os_Unit_4" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".os_Activities.os_Unit_3" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".os_Activities.os_Unit_2" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".os_Activities.os_unit_1" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".unit_coa.Unit5_coa" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".unit_coa.Unit4_coa" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".unit_coa.Unit3_coa" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".unit_coa.unit2_coa" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".graphicsActivities.graphics_unit_5" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".graphicsActivities.graphics_unit_4" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".graphicsActivities.graphics_unit_3" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".graphicsActivities.graphics_unit_2" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".graphicsActivities.graphics_unit_1" android:configChanges="orientation|screenSize"
+            />
+        <activity android:name=".Unit1_COA" android:configChanges="orientation|screenSize"
+
+            />
+
+
+        <activity android:name=".Home" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".MainActivity" android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

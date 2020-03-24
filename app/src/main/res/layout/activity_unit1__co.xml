@@ -18,8 +18,10 @@
             android:orientation="vertical"
             >
 
-    <TextView
-        android:layout_width="match_parent"
+
+    <com.codesgood.views.JustifiedTextView
+        android:layout_gravity="center_vertical|end"
+            android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/txt"
         android:textSize="15dp"

@@ -3,6 +3,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!--    COA UNIT 1 STRINGS-->
+
     <string name="traid">\n “TRIAD” \n\n A computer system can be defined as a TRIAD comprising of three fundamental components:\n
 (1) The CPU (2) The Memory and (3) The I/O \n\n
 These three devices communicates with each other with the help of a set of wires called System Bus,
@@ -14,7 +17,8 @@ A computer system requires an interface with the user to execute a program. The 
 accomplished with the help of I/O devices. (The Input – Output subsystem of a computer, referred to
 as I/O, provides an efficient mode of communication between the central system and the outside
 environment).\n\n</string>
-    <string name="IOheading"><u><b>Input – Output Architecture</b></u> \n\n
+    <string name="IOheading">
+        <html><u><b>Input – Output Architecture</b></u> \n\n</html>
 A computer system organization is defined as a collection of component connected together in a
 logical sense, i.e. the logical structure of a computer system is termed computer organization.
 The collection of physical component such as CPU, Memory, I/O arranged constitutes computer
@@ -286,6 +290,8 @@ Calling an executive interrupt service routine:\n\n
 Once the interrupt is identified the CPU saves the content of register onto the stack, transfer the control to ISR, disable interrupts, and services interrupt enable the interrupt and reload the saved register values and contents.\n\n
 </string>
 
+<!--    GRAPHICS UNIT 1 STRINGS-->
+
     <string name="graphics_unit1_firstsagment">
     what is computer Graphics\n
 computer graphics is use of computer to define store manipulate,
@@ -357,6 +363,8 @@ for all the pixel\n
 each pixel should be displayed\n
          Therefor, a frame buffer contains internal representation of pixel
 </string>
+
+<!--    VB.Net UNIT 1 STRINGS-->
     <string name="firstsegmentvbunit1">
       <u><b> *DOT NET Framework</b></u>\n:-
         The .Net framework is a software development platform developed by Microsoft. The framework was meant to create applications,
@@ -816,7 +824,7 @@ Module loops\n
    Sub Main()\n
       \' local variable definition\n
       Dim a As Integer = 10\n
-     \ 'do loop execution\n
+     \'do loop execution\n
 
       Do\n\n
           Console.WriteLine("value of a: {0}", a)\n
@@ -860,5 +868,279 @@ Here, statement(s) may be a single statement or a block of statements. The condi
 
     </string>
 
+
+
+<!--    VB.Net UNIT 4-->
+
+    <string name="controls"> <b><u>CONTROLS</u></b>\n\n
+
+        An object is a type of user interface element you create on a Visual Basic form by using a toolbox control. In fact, in Visual Basic, the form itself is an object. Every Visual Basic control consists of three important elements − \n\n
+
+-Properties which describe the object,\n\n
+
+-Methods cause an object to do something and\n\n
+
+-Events are what happens when an object does something.\n\n
+
+<h1><b>Control Properties\n\n</b></h1>
+All the Visual Basic Objects can be moved, resized or customized by setting their properties. A property is a value or characteristic held by a Visual Basic object, such as Caption or Fore Color.
+
+Properties can be set at design time by using the Properties window or at run time by using statements in the program code.
+
+Object. Property = Value
+Where
+
+Object is the name of the object you\'re customizing.
+
+Property is the characteristic you want to change.
+
+Value is the new property setting.
+
+For example,
+
+Form1.Caption = "Hello"
+You can set any of the form properties using Properties Window. Most of the properties can be set or read during application execution. You can refer to Microsoft documentation for a complete list of properties associated with different controls and restrictions applied to them.
+
+    </string>
+
+    <string name="Radio_Button">
+
+        <b><u>RADIO BUTTON</u></b>\n\n
+        The RadioButton control is used to provide a set of mutually exclusive options. The user can select one radio button in a group. If you need to place more than one group of radio buttons in the same form, you should place them in different container controls like a GroupBox control.\n\n
+        The Checked property of the radio button is used to set the state of a radio button. You can display text, image or both on radio button control. You can also change the appearance of the radio button control by using the Appearance property.\n\n
+
+        <u>Properties of the RadioButton Control</u>\n\n
+The following are some of the commonly used properties of the RadioButton control −\n\n
+
+1.
+Appearance\n
+
+Gets or sets a value determining the appearance of the radio button.\n\n
+
+2.
+AutoCheck\n
+
+Gets or sets a value indicating whether the Checked value and the appearance of the control automatically change when the control is clicked.\n\n
+
+3.
+CheckAlign\n
+
+Gets or sets the location of the check box portion of the radio button.\n\n
+
+4.
+Checked\n
+
+Gets or sets a value indicating whether the control is checked.\n\n
+
+5.
+Text\n
+
+Gets or sets the caption for a radio button.\n\n
+
+6.
+TabStop\n
+
+Gets or sets a value indicating whether a user can give focus to the RadioButton control using the TAB key.\n\n
+    </string>
+
+    <string name="text_box">
+        <u><b>TEXT BOX</b></u>
+         Text box controls allow entering text on a form at runtime. By default, it takes a single line of text, however, you can make it accept multiple texts and even add scroll bars to it.\n\n
+
+        The Properties of the TextBox Control
+The following are some of the commonly used properties of the TextBox control −\n\n
+
+1.
+AcceptsReturn\n
+
+Gets or sets a value indicating whether pressing ENTER in a multiline TextBox control creates a new line of text in the control or activates the default button for the form.\n\n
+
+
+2.
+AutoCompleteCustomSource\n
+
+Gets or sets a custom System.Collections.Specialized.StringCollection to use when the AutoComplete Source property is set to CustomSource.\n\n
+
+3.
+AutoCompleteMode\n
+
+Gets or sets an option that controls how automatic completion works for the TextBox.\n\n
+
+4.
+AutoCompleteSource\n
+
+Gets or sets a value specifying the source of complete strings used for automatic completion.\n\n
+
+5.
+CharacterCasing\n
+
+Gets or sets whether the TextBox control modifies the case of characters as they are typed.\n\n
+
+6.
+Font\n
+
+Gets or sets the font of the text displayed by the control.\n\n
+
+        The Methods of the TextBox Control \n
+The following are some of the commonly used methods of the TextBox control −\n\n
+
+1.
+AppendText\n
+
+Appends text to the current text of a text box.\n\n
+
+2.
+Clear\n
+
+Clears all text from the text box control.\n\n
+
+3.
+Copy\n
+
+Copies the current selection in the text box to the Clipboard.\n\n
+
+4.
+Cut\n
+
+Moves the current selection in the text box to the Clipboard.\n\n
+
+5.
+Paste\n
+
+Replaces the current selection in the text box with the contents of the Clipboard.\n\n
+
+6.
+Paste(String)\n
+
+Sets the selected text to the specified text without clearing the undo buffer.\n\n
+
+7.
+ResetText\n
+
+Resets the Text property to its default value.\n\n
+
+8.
+ToString\n
+
+Returns a string that represents the TextBoxBase control.\n\n
+
+9.
+Undo\n
+
+Undoes the last edit operation in the text box.\n\n
+
+    </string>
+    <string name="Masked_text_box">
+        <u><b>MASKED TEXT BOX</b></u>\n\n
+        The .NET MaskedTextBox control provides a mechanism to validate user input on a Form. For example, if you need a TextBox that should accept dates in a certain format, you should set the masking in the MaskedTextBox. The MaskedTextBox uses the MaskedTextProvider mask syntax. The mask is used to distinguish between proper and improper user input. More on the Mask Syntax later.\n\n
+
+Key Properties of a MaskedTextBox\n\n
+1.MaskedTextBox.AllowPromptAsInput\n
+The MaskedTextBox.AllowPromptAsInput Property determines whether PromptChar can be entered as valid data by the user. More on the PromptChar Property later.\n\n
+
+2.AsciiOnly\n
+The MaskedTextBox.AsciiOnly Property determines if a MaskedTextBox control accepts characters outside of the ASCII character set. If you do not know what ASCII is, please visit this link.\n\n
+
+3.BeepOnError\n
+The MaskedTextBox.BeepOnError Property raises the system beep for each key stroke that it rejects.\n\n
+
+4.CutCopyMaskFormat\n
+The MaskedTextBox.CutCopyMaskFormat Property determines if literals and prompt characters are copied to the Clipboard.\n\n
+
+5.HidePromptOnLeave\n
+The MaskedTextBox.HidePromptOnLeave Property indicates whether the prompt characters in the input mask are hidden when the MaskedTextBox loses focus.\n\n
+    </string>
+    <string name="richTextBox">
+        <u><b>RICH TEXT BOX</b></u>\n\n
+
+        A RichTextBox control is an advanced text box that provides text editing and advanced formatting features including loading rich text format (RTF) files.\n\n
+
+In this article, I will demonstrates how create and use various features of Windows Forms RichTextBox control.\n\n
+
+
+
+<u>Creating a RichTextBox</u>\n\n
+
+We can create a RichTextBox control using a Forms designer at design-time or using the RichTextBox class in code at run-time.\n\n
+
+
+
+To create a RichTextBox control at design-time, you simply drag and drop a RichTextBox control from Toolbox onto a Form in Visual Studio. Once a RichTextBox is added to a Form, you can move it around and resize it using mouse and set its properties and events.\n\n
+
+Creating a RichTextBox control at run-time is merely a work of creating an instance of RichTextBox class, set its properties and add RichTextBox class to the Form controls.\n\n
+
+First step to create a dynamic RichTextBox is to create an instance of RichTextBox class. The following code snippet creates a RichTextBox control object.\n\n
+
+Dim dynamicRichTextBox As New RichTextBox()\n\n
+
+
+
+In the next step, you may set properties of a RichTextBox control. The following code snippet sets size, location, background color, foreground color, Text, Name, and Font properties of a RichTextBox.\n\n
+
+dynamicRichTextBox.Location = New Point(20, 20)\n\n
+
+dynamicRichTextBox.Width = 300\n\n
+
+dynamicRichTextBox.Height = 200\n\n
+
+
+
+'  Set background and foreground\n\n
+
+dynamicRichTextBox.BackColor = Color.Red\n\n
+
+dynamicRichTextBox.ForeColor = Color.Blue\n\n
+
+dynamicRichTextBox.Text = "I am Dynamic RichTextBox"\n\n
+
+
+
+dynamicRichTextBox.Name = "DynamicRichTextBox"\n\n
+
+dynamicRichTextBox.Font = New Font("Georgia", 16)\n\n
+
+Once a RichTextBox control is ready with its properties, next step is to add the RichTextBox control to the Form. To do so, we use Form.Controls.Add method. The following code snippet adds a RichTextBox control to the current Form.\n\n
+
+Controls.Add(dynamicRichTextBox)\n\n
+    </string>
+
+    <string name="numericupdown">
+        <b><u>NUMERIC UP-DOWN</u></b>\n\n
+
+        NumericUpDown is basically countered that the user can input a number within the specified range. With the Help of NumericUpDown Control, we can enter numeric values, with advanced features like up-down buttons and accelerating auto-repeat.\n\n
+How to use NumericUpDown Control\n\n
+
+Drag and drop NumericUpDown Control from the toolbox on window Form.\n
+        By Default Maximum and Minimum value in NumericUpDown Control is set 100 and 0 respectively. You can also set Maximum and Minimum value in NumericUpDown Control. To show the value in NumericUpDown.\n\n
+
+
+        Run the project-:\n\n
+
+        When you select the value in NumericUpDown1 then the ValueChanged event will fire and selected value will show in the TextBox.\n\n
+
+        <u> NumericUpDown Control Properties</u>\n\n
+
+DecimalPlaces:  Gets or sets the number of decimal places to display in NumericUpDown Control.\n\n
+
+UpDownAlign:  Set positions the arrow buttons on the left or the right side of the NumericUpDown. Default value is Right.\n\n
+
+Increment:  Gets or sets the value to increment or decrement the NumericUpDown.\n\n
+
+    </string>
+    <string name="treeView">
+        <u><b>TREE VIEW</b></u>
+        The TreeView control is used to display hierarchical representations of items similar to the ways the files and folders are displayed in the left pane of the Windows Explorer. Each node may contain one or more child nodes.\n\n
+
+        The user can expand the TreeNode by clicking the plus sign (+) button, if one is displayed next to the TreeNode, or you can expand the TreeNode by calling the TreeNode.Expand method. When a parent node is expanded, its child nodes are visible. You can also navigate through tree views with various properties: FirstNode, LastNode, NextNode, PrevNode, NextVisibleNode, PrevVisibleNode.\n\n
+
+The fullpath method of treeview control provides the path from root node to the selected node.\n\n
+
+TreeView1.SelectedNode.FullPath\n\n
+
+Tree nodes can optionally display check boxes. To display the check boxes, set the CheckBoxes property of the TreeView to true.\n\n
+
+TreeView1.CheckBoxes = True\n\n
+
+    </string>
 
 </resources>
