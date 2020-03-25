@@ -1050,6 +1050,7 @@ The MaskedTextBox.CutCopyMaskFormat Property determines if literals and prompt c
 5.HidePromptOnLeave\n
 The MaskedTextBox.HidePromptOnLeave Property indicates whether the prompt characters in the input mask are hidden when the MaskedTextBox loses focus.\n\n
     </string>
+
     <string name="richTextBox">
         <u><b>RICH TEXT BOX</b></u>\n\n
 
@@ -1083,9 +1084,7 @@ dynamicRichTextBox.Width = 300\n\n
 
 dynamicRichTextBox.Height = 200\n\n
 
-
-
-'  Set background and foreground\n\n
+        Set background and foreground\n\n
 
 dynamicRichTextBox.BackColor = Color.Red\n\n
 
@@ -1140,7 +1139,17 @@ TreeView1.SelectedNode.FullPath\n\n
 Tree nodes can optionally display check boxes. To display the check boxes, set the CheckBoxes property of the TreeView to true.\n\n
 
 TreeView1.CheckBoxes = True\n\n
+    </string>
+    
+    <string name="OS_unit_1_part_1">
+       <b> What is an OS?</b>\n\n
+An operating system is a program that controls the execution of application programs and acts as an interface between the user of a computer and the computer hardware.\n\n
 
+Functions of Operating system – Operating system performs three functions:\n
+1.	Convenience: An OS makes a computer more convenient to use.\n
+2.	Efficiency: An OS allows the computer system resources to be used in an efficient manner.\n
+3.	Ability to Evolve: An OS should be constructed in such a way as to permit the effective development,\n testing and introduction of new system functions at the same time without interfering with service.\n\n\n
+very general-purpose computer consists of the hardware, operating system, system programs, and application programs. The hardware consists of memory, CPU, ALU, and I/O devices, peripheral device, and storage device. System program consists of compilers, loaders, editors, OS, etc. The application program consists of business programs, database programs.
     </string>
 
 </resources>
