@@ -1142,7 +1142,7 @@ TreeView1.CheckBoxes = True\n\n
     </string>
     
     <string name="OS_unit_1_part_1">
-       <b> What is an OS?</b>\n\n
+       <b> ►What is an OS?</b>\n\n
 An operating system is a program that controls the execution of application programs and acts as an interface between the user of a computer and the computer hardware.\n\n
 
 Functions of Operating system – Operating system performs three functions:\n
@@ -1151,5 +1151,212 @@ Functions of Operating system – Operating system performs three functions:\n
 3.	Ability to Evolve: An OS should be constructed in such a way as to permit the effective development,\n testing and introduction of new system functions at the same time without interfering with service.\n\n\n
 very general-purpose computer consists of the hardware, operating system, system programs, and application programs. The hardware consists of memory, CPU, ALU, and I/O devices, peripheral device, and storage device. System program consists of compilers, loaders, editors, OS, etc. The application program consists of business programs, database programs.
     </string>
+
+
+    <string name="OS_unit_1_part_2">
+
+        <b>	►What are the Types of OS?</b>\n\n
+
+        <b>1.Batch Operating System –</b>\n
+        This type of operating system does not interact with the computer directly. There is an operator which takes similar jobs having same requirement and group them into batches. It is the responsibility of operator to sort the jobs with similar needs.\n
+
+        <b>Advantages of Batch Operating System:</b>\n
+        •	It is very difficult to guess or know the time required by any job to complete. Processors of the batch systems know how long the job would be when it is in queue\n
+•	Multiple users can share the batch systems\n
+•	The idle time for batch system is very less\n\n
+
+        <b>Disadvantages of Batch Operating System:</b>\n
+
+        •	The computer operators should be well known with batch systems\n
+•	Batch systems are hard to debug\n
+•	It is sometime costly\n
+•	The other jobs will have to wait for an unknown time if any job fails\n
+    </string>
+
+    <string name="OS_unit_1_part_3">
+        <b>2.Multiprogramming OS</b>\n\n
+        Sharing the processor, when two or more programs reside in memory at the same time, is referred as multiprogramming. Multiprogramming assumes a single shared processor. Multiprogramming increases CPU utilization by organizing jobs so that the CPU always has one to execute.\n
+•   An OS does the following activities related to multiprogramming.
+
+•   The operating system keeps several jobs in memory at a time.\n
+
+•   This set of jobs is a subset of the jobs kept in the job pool.\n
+
+•   The operating system picks and begins to execute one of the jobs in the memory.\n
+
+•   Multiprogramming operating systems monitor the state of all active programs and system resources using memory management programs to ensures that the CPU is never idle, unless there are no jobs to process.\n\n
+
+        <b>Advantages</b>\n
+•   High and efficient CPU utilization.\n
+•   User feels that many programs are allotted CPU almost simultaneously.\n\n
+        <b>Disadvantages</b>\n
+•   CPU scheduling is required.\n
+•   To accommodate many jobs in memory, memory management is required.\n
+    </string>
+
+    <string name="OS_unit_1_part_4">
+        <b>2.Multiuser OS</b>\n\n
+        A multi user operating system is that which handles and controls multiple users attached to a single computer. There are many benefits and disadvantages of multi user operating system that we will discuss.\n
+
+        <b>Advantages</b>\n
+•  Printing jobs in the office or library can be best handled by multi user operating system. Normal OS cannot do the same job as printing can be mismatched.\n
+•Each user can access same document on own pc. For example if one computer has a song or movie then other computers attached with it will play that song or movie on their pc also.\n
+•Airlines also use this system and ticket reservation is also done by this system.\n
+•Teachers and library staff also use multi user operating system for handling books and for searching books. The book record is stored in one computer and other terminals access to single resource to query the books.\n
+•If one computer in the network gets error then other computers not get affected and that system handle this efficiently.\n\n
+        <b>Disadvantages</b>\n
+       • If you have computer that has private information then sharing your computer with multiple users is dangerous.\n
+•If one computer get attacked by a virus then other computers also get suffered.\n
+•Your computer information will be shared to other users also.\n
+•Creating multiple accounts on single computer sometimes not fit to users so it is better to have multiple computers for each user.\n\n\n
+    </string>
+
+    <string name="OS_unit_1_part_5">
+        <b>2.Multitasking OS</b>\n\n
+        <b>Note : Multitaking OS is also known as Timesharing OS.</b>\n
+        Each task is given some time to execute, so that all the tasks work smoothly. Each user gets time of CPU as they use single system. These systems are also known as Multitasking Systems. The task can be from single user or from different users also. The time that each task gets to execute is called quantum. After this time interval is over OS switches over to next task.\n
+        <b>Advantages</b>\n
+•  Each task gets an equal opportunity\n
+•Less chances of duplication of software\n
+•CPU idle time can be reduced\n\n
+        <b>Disadvantages</b>\n
+•Reliability problem.
+•One must have to take care of security and integrity of user programs and data.
+•Data communication problem.
+    </string>
+
+    <string name="OS_unit_1_part_6">
+<b>	►What is Spooling ?</b>\n\n
+        •Spooling refers to simultaneous peripheral operations on-line, spooling refers to putting jobs in a buffer, a special area in memory or on a disk where a device can access them when it is ready.\n
+•Spooling is useful because devices access data at different rates.\n
+•The buffer provides a waiting station where data can rest while the slower device catches up\n
+•Spooling also lets you place a number of print jobs on a queue instead of waiting for each one to finish before specifying the next one.\n\n\n
+    </string>
+
+    <string name="OS_unit_1_part_7">
+
+            <b>	►What are Real Time operating Systems ? </b>\n\n
+        A real-time system is defined as a data processing system in which the time interval required to process and respond to inputs is so small that it controls the environment. The time taken by the system to respond to an input and display of required updated information is termed as the response time. So in this method, the response time is very less as compared to online processing.
+
+Real-time systems are used when there are rigid time requirements on the operation of a processor or the flow of data and real-time systems can be used as a control device in a dedicated application. A real-time operating system must have well-defined, fixed time constraints, otherwise the system will fail. For example, Scientific experiments, medical imaging systems, industrial control systems, weapon systems, robots, air traffic control systems, etc.\n\n\n
+
+
+        <b>	► What are Distributed operating Systems ? </b>\n\n
+        Distributed systems use multiple central processors to serve multiple real-time applications and multiple users. Data processing jobs are distributed among the processors accordingly.\n
+        The processors communicate with one another through various communication lines (such as high-speed buses or telephone lines). These are referred as loosely coupled systems or distributed systems. Processors in a distributed system may vary in size and function. These processors are referred as sites, nodes, computers, and so on.\n\n
+
+        <b>Advantages</b>\n
+•With resource sharing facility, a user at one site may be able to use the resources available at another.\n
+•Speedup the exchange of data with one another via electronic mail.\n
+•If one site fails in a distributed system, the remaining sites can potentially continue operating.\n
+•Better service to the customers.\n
+•Reduction of the load on the host computer.\n
+•Reduction of delays in data processing.\n\n\n
+    </string>
+
+
+    <string name="OS_unit_1_part_8">
+<b>	►What are the Operating System concepts ?</b>\n\n
+        <b>1 — Processes and Process Management</b>\n
+A process is basically a program in execution. The execution of a process must progress in a sequential fashion. To put it in simple terms, we write our computer programs in a text file and when we execute this program, it becomes a process which performs all the tasks mentioned in the program.\n\n
+
+        <b>2 — Threads and Concurrency</b>\n
+A thread is a flow of execution through the process code, with its own program counter that keeps track of which instruction to execute next, system registers which hold its current working variables, and a stack which contains the execution history.\n
+A thread shares with its peer threads few information like code segment, data segment and open files. When one thread alters a code segment memory item, all other threads see that.\n\n
+
+          <b>3 — Scheduling</b>\n
+The process scheduling is the activity of the process manager that handles the removal of the running process from the CPU and the selection of another process on the basis of a particular strategy.\n\n
+
+
+        <b>4 —Memory Management</b>\n
+Memory management is the functionality of an operating system which handles or manages primary memory and moves processes back and forth between main memory and disk during execution.\n\n
+
+
+        <b>5 — I/O Management</b>\n
+One of the important jobs of an Operating System is to manage various I/O devices including mouse, keyboards, touch pad, disk drives, display adapters, USB devices, Bit-mapped screen, LED, Analog-to-digital converter, On/off switch, network connections, audio I/O, printers etc.\n\n
+    </string>
+
+
+    <string name="OS_unit_1_part_9">\n\n
+
+        <b>►What are Operating System Services ?</b>\n
+
+        An Operating System provides services to both the users and to the programs.\n\n
+
+•It provides programs an environment to execute.\n
+•It provides users the services to execute the programs in a convenient manner.\n
+Following are a few common services provided by an operating system −\n
+
+•Program execution\n
+•I/O operations\n
+•File System manipulation\n
+•Communication\n
+•Error Detection\n
+•Resource Allocation\n
+•Protection\n\n\n
+        <b>1.Program execution</b>\n\n
+•Operating systems handle many kinds of activities from user programs to system programs like printer spooler, name servers, file server, etc. Each of these activities is encapsulated as a process.\n\n
+
+A process includes the complete execution context (code to execute, data to manipulate, registers, OS resources in use). Following are the major activities of an operating system with respect to program management −\n
+
+•Loads a program into memory.\n
+•Executes the program.\n
+•Handles program\'s execution.\n
+•Provides a mechanism for process synchronization.\n
+•Provides a mechanism for process communication.\n
+•Provides a mechanism for deadlock handling.\n\n\n
+<b>2.I/O Operation</b>\n\n
+An I/O subsystem comprises of I/O devices and their corresponding driver software. Drivers hide the peculiarities of specific hardware devices from the users.\n\n
+
+An Operating System manages the communication between user and device drivers.\n
+
+•I/O operation means read or write operation with any file or any specific I/O device.\n
+•Operating system provides the access to the required I/O device when required.\n\n\n
+        <b>3.File system manipulation</b>\n\n
+
+A file represents a collection of related information. Computers can store files on the disk (secondary storage), for long-term storage purpose. Examples of storage media include magnetic tape, magnetic disk and optical disk drives like CD, DVD. Each of these media has its own properties like speed, capacity, data transfer rate and data access methods.\n
+
+A file system is normally organized into directories for easy navigation and usage. These directories may contain files and other directions. Following are the major activities of an operating system with respect to file management −\n
+
+•Program needs to read a file or write a file.\n
+•The operating system gives the permission to the program for operation on file.\n
+•Permission varies from read-only, read-write, denied and so on.\n
+•Operating System provides an interface to the user to create/delete files.\n
+•Operating System provides an interface to the user to create/delete directories.\n
+•Operating System provides an interface to create the backup of file system.\n\n\n
+
+        <b>4.Communication</b>\n\n
+In case of distributed systems which are a collection of processors that do not share memory, peripheral devices, or a clock, the operating system manages communications between all the processes. Multiple processes communicate with one another through communication lines in the network.\n
+
+The OS handles routing and connection strategies, and the problems of contention and security. Following are the major activities of an operating system with respect to communication −\n
+
+•Two processes often require data to be transferred between them\n
+•Both the processes can be on one computer or on different computers, but are connected through a computer network.\n
+•Communication may be implemented by two methods, either by Shared Memory or by Message Passing.\n\n\n
+
+                <b>5.Error handling</b>\n\n
+
+Errors can occur anytime and anywhere. An error may occur in CPU, in I/O devices or in the memory hardware. Following are the major activities of an operating system with respect to error handling \n
+
+•The OS constantly checks for possible errors.\n
+•The OS takes an appropriate action to ensure correct and consistent computing.\n\n\n
+
+        <b>6.Resource Management</b>\n\n
+In case of multi-user or multi-tasking environment, resources such as main memory, CPU cycles and files storage are to be allocated to each user or job. Following are the major activities of an operating system with respect to resource management −\n
+
+•The OS manages all kinds of resources using schedulers.\n
+•CPU scheduling algorithms are used for better utilization of CPU.\n\n\n
+
+                <b>7.Protection</b>\n\n
+Considering a computer system having multiple users and concurrent execution of multiple processes, the various processes must be protected from each other\'s activities.\n
+
+Protection refers to a mechanism or a way to control the access of programs, processes, or users to the resources defined by a computer system. Following are the major activities of an operating system with respect to protection −\n
+
+•The OS ensures that all access to system resources is controlled.\n
+•The OS ensures that external I/O devices are protected from invalid access attempts.\n
+•The OS provides authentication features for each user by means of passwords.\n
+    </string>
+
+
 
 </resources>

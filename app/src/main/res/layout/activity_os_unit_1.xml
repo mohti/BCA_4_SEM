@@ -25,7 +25,73 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
-                android:src="@drawable/os_intro_image"/>
+                android:src="@drawable/os_intro_image"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:text="@string/OS_unit_1_part_2"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/bath_os"/>
+
+            <TextView
+                android:text="@string/OS_unit_1_part_3"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="200dp"
+                android:src="@drawable/multiprogramming_os"/>
+
+            <TextView
+                android:text="@string/OS_unit_1_part_5"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="200dp"
+                android:src="@drawable/multitasking_os"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="@string/OS_unit_1_part_6"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="@string/OS_unit_1_part_7"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="@string/OS_unit_1_part_8"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="@string/OS_unit_1_part_9"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
 
 
         </LinearLayout>
