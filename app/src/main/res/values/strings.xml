@@ -3,6 +3,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unit_name_goes_here">unit name goes here</string>
 
 <!--    COA UNIT 1 STRINGS-->
 
@@ -342,7 +343,7 @@ software.\n\n\n
         <b>►Random Scan and Raster Scan Display:</b>\n\n
         <b>1.Random Scan Display:</b>\n\n
         Random Scan System uses an electron beam which operates like a pencil to create a line image on the CRT screen. The picture is constructed out of a sequence of straight-line segments. Each line segment is drawn on the screen by directing the beam to move from one point on the screen to the next, where its x and y coordinates define each point. After drawing the picture. The system cycles back to the first line and design all the lines of the image 30 to 60 time each second. \n\n
-        Random-scan monitors are also known as vector displays or stroke-writing displays or calligraphic displays.\n
+        Random-scan monitors are also known as vector displays or stroke-writing displays or calligraphic displays.\n\n\n
 
         <b>Advantages:</b>\n\n
 •A CRT has the electron beam directed only to the parts of the screen where an image is to be drawn.\n
@@ -1171,6 +1172,8 @@ Tree nodes can optionally display check boxes. To display the check boxes, set t
 
 TreeView1.CheckBoxes = True\n\n
     </string>
+
+<!--    OS Unit 1 Started here......-->
     
     <string name="OS_unit_1_part_1">
        <b> ►What is an OS?</b>\n\n
@@ -1389,5 +1392,132 @@ Protection refers to a mechanism or a way to control the access of programs, pro
     </string>
 
 
+<!--    OS Unit 2 Started here ....-->
+
+    <string name="OS_unit_2_part_1">\n\n
+       <b> ►Process</b>\n\n
+•A process is basically a program in execution. The execution of a process must progress in a sequential fashion.\n
+•A process is defined as an entity which represents the basic unit of work to be implemented in the system.\n
+•To put it in simple terms, we write our computer programs in a text file and when we execute this program, it becomes a process which performs all the tasks mentioned in the program.\n
+•When a program is loaded into the memory and it becomes a process, it can be divided into four sections ─ stack, heap, text and data. The following image shows a simplified layout of a process inside main memory −\n
+    </string>
+
+    <string name="OS_unit_2_part_2">\n\n
+       <b> ►Process Management </b>\n\n
+Process managements involve the execution of various tasks such as creation of processes, scheduling of processes, management of deadlock, and termination of processes. It is responsibility of operating system to manage all the running processes of the system. Operating system manages processes by performing tasks such as resource allocation and process scheduling. When a process runs on computer device memory and CPU of computer are utilized. The operating system also has to synchronize the different processes of computer system.\n\n
+
+A process consists of set of instruction to be executed called process code. A process is also associated with some data that is to be processed. The resources that a process required for its execution is called process components. There is also a state that is associated with a process at a particular instant of time called process state. Similar to these concepts, there are number of concepts associated with the process management function of an operating system. Some of those concepts are given as following.\n
+
+1.Process State\n
+2.Process Control Block (PCB)\n
+3.Process Operations\n
+4.Process Scheduling\n
+5.Process Synchronization\n
+6.Inter process Communication\n
+7.Deadlock\n\n
+
+               <b> ►Process states </b>\n\n
+A process state can be defined as the condition of process at a particular instant of time. Process state defines the current position of process. This help to get detail of our process at a particular instant. There are basically seven states of process in operating system. The following are the seven states of process:\n\n
+
+        <b> 1.New</b>\n\n
+When any program is calls from secondary memory or calls from hard disk to primary memory or RAM then the new process is created. Basically it specified the time when a process is created.\n
+
+        <b>2.Ready </b>\n
+In this time interval the state of the process is loaded into the primary memory and ready for execution.\n
+
+        <b>3.Waiting </b>\n
+In this sate the process is kept on hold and other process are allowed to start 0their execution. In other words, it specifies the time interval when a process waits for the allocation of CPU time and the other resources for its execution.\n
+
+        <b>4.Executing </b>\n
+This is the main state of any process in this state the process is executing. In other words, it is the time interval when a process is being executed by CPU.\n
+
+        <b>5.Blocked </b>\n
+It specifies the time interval when a process is waiting for an event like input / output operations to complete.\n
+
+        <b>6.Suspended </b>\n
+It specifies the time when a process is ready for execution but has not been placed in the ready queue by operating system.\n
+
+        <b>7.Terminated </b>\n
+It specifies the time when a process is terminated or ended and all the resources that are utilized by process and memory that is utilized by the process are free.\n\n
+    </string>
+
+
+    <string name="OS_unit_2_part_3">\n\n
+    <b> ►    Process Control Block (PCB)</b>\n\n
+
+    A Process Control Block is a data structure maintained by the Operating System for every process. The PCB is identified by an integer process ID (PID). A PCB keeps all the information needed to keep track of a process.\n
+        The architecture of a PCB is completely dependent on Operating System and may contain different information in different operating systems. Here is a simplified diagram of a PCB −
+    </string>
+
+    <string name="OS_unit_2_part_4">\n\n
+    <b> ► Process Scheduling </b>\n\n
+
+    The process scheduling is the activity of the process manager that handles the removal of the running process from the CPU and the selection of another process on the basis of a particular strategy.
+
+Process scheduling is an essential part of a Multiprogramming operating systems. Such operating systems allow more than one process to be loaded into the executable memory at a time and the loaded process shares the CPU using time multiplexing.\n\n
+
+        The OS maintains all PCBs in Process Scheduling Queues. The OS maintains a separate queue for each of the process states and PCBs of all processes in the same execution state are placed in the same queue. When the state of a process is changed, its PCB is unlinked from its current queue and moved to its new state queue.\n
+
+The Operating System maintains the following important process scheduling queues −\n
+
+•Job queue − This queue keeps all the processes in the system.\n
+
+•Ready queue − This queue keeps a set of all processes residing in main memory, ready and waiting to execute. A new process is always put in this queue.\n
+
+•Device queues − The processes which are blocked due to unavailability of an I/O device constitute this queue.\n
+
+        The OS can use different policies to manage each queue (FIFO, Round Robin, Priority, etc.). The OS scheduler determines how to move processes between the ready and run queues which can only have one entry per processor core on the system; in the above diagram, it has been merged with the CPU.\n\n
+
+    </string>
+
+    <string name="OS_unit_2_part_5">\n\n
+    <b> ► CPU scheduling</b>\n\n
+
+    CPU scheduling is a process which allows one process to use the CPU while the execution of another process is on hold(in waiting state) due to unavailability of any resource like I/O etc, thereby making full use of CPU. The aim of CPU scheduling is to make the system efficient, fast and fair.
+Whenever the CPU becomes idle, the operating system must select one of the processes in the ready queue to be executed. The selection process is carried out by the short-term scheduler (or CPU scheduler). The scheduler selects from among the processes in memory that are ready to execute, and allocates the CPU to one of them.\n\n
+
+            <b>Types of CPU Scheduling</b>\n\n
+
+CPU scheduling decisions may take place under the following four circumstances:\n
+
+•When a process switches from the running state to the waiting state(for I/O request or invocation of wait for the termination of one of the child processes).\n
+•When a process switches from the running state to the ready state (for example, when an interrupt occurs).\n
+•When a process switches from the waiting state to the ready state(for example, completion of I/O).\n
+•When a process terminates.\n\n
+
+            <b>Scheduling Criteria</b>\n\n
+
+                    <b>CPU Utilization</b>\n
+To make out the best use of CPU and not to waste any CPU cycle, CPU would be working most of the time(Ideally 100% of the time). Considering a real system, CPU usage should range from 40% (lightly loaded) to 90% (heavily loaded.)\n
+                            <b>•Throughput</b>\n
+
+        It is the total number of processes completed per unit time or rather say total amount of work done in a unit of time. This may range from 10/second to 1/hour depending on the specific processes.\n
+                            <b>•Turnaround Time</b>\n
+
+It is the amount of time taken to execute a particular process, i.e. The interval from time of submission of the process to the time of completion of the process(Wall clock time).\n
+
+                            <b>•Waiting Time</b>\n
+
+The sum of the periods spent waiting in the ready queue amount of time a process has been waiting in the ready queue to acquire get control on the CPU.\n
+
+                            <b>•Load Average</b>\n
+
+It is the average number of processes residing in the ready queue waiting for their turn to get into the CPU.\n
+
+                            <b>•Response Time</b>\n
+
+Amount of time it takes from when a request was submitted until the first response is produced. Remember, it is the time till the first response and not the completion of process execution(final response).\n
+
+In general CPU utilization and Throughput are maximized and other factors are reduced for proper optimization.\n\n
+
+      <b> ►Scheduling Algorithms</b>\n\n
+To decide which process to execute first and which process to execute last to achieve maximum CPU utilisation, computer scientists have defined some algorithms, they are:\n
+•First Come First Serve(FCFS) Scheduling\n
+•Shortest-Job-First(SJF) Scheduling\n
+•Priority Scheduling\n
+•Round Robin(RR) Scheduling\n
+•Multilevel Queue Scheduling\n
+•Multilevel Feedback Queue Scheduling\n\n
+    </string>
 
 </resources>
