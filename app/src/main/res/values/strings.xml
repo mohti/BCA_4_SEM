@@ -292,81 +292,112 @@ Once the interrupt is identified the CPU saves the content of register onto the 
 
 <!--    GRAPHICS UNIT 1 STRINGS-->
 
-    <string name="graphics_unit1_firstsagment">
-    what is computer Graphics\n
-computer graphics is use of computer to define store manipulate,
-introgate  and present the pictorial output
-                          OR\n
+    <string name="graphics_unit_1_part_1">
+        <b>►What is Computer Graphics?</b>\n\n
+Computer graphics is an art of drawing pictures, lines, charts, etc using computers with the help of programming. Computer graphics is made up of number of pixels. \n\n
 
-computer graphics means creation,storage and manipulation of models come
-from many fields incuding physical ,mathematical,artistics and biological structure\n
 
-<b><u>Types:-</u></b>\n
-        *Interactive computer graphics +++++++)) a two way communication between the computer
+<b>What are the Types of Computer Graphics :-</b>\n\n
+        <b>1. Interactive computer graphics</b> \n
+        a two way communication between the computer
 and the user ,where the observer is given some control over the image by providing
 an input device example video games  \n\n
 
-        <b>* Non -Interactive computer graphics (passive computer graphics)-</b>\n
+        <b>2.Non -Interactive computer graphics (passive computer graphics)-</b>\n
 here  the user does not have any kind of control over the image .
 the image is product of static stored program and will work according to
 the instructions given in the program .here the image is totally
-under the control of program intruction not under the user
-Example - screensaver.
-\n\n
+under the control of program instruction not under the user
+Example - screensaver.\n\n
 
-        <u>pixel:-</u> the smallest addressable screen element or smallest addresabale area which we can
-can control on the screen at some point of time is called pixel
-\n\n
-<u>Resolution:- </u>the number of pointss that can be displayed without
-overlapping each other on the screen is defined as resolution
-\n\n\
-It is also defines the quality of graphics
-        \n
-Aspect ratio :- it is a ratio of vertical lenght by horizontal length
-of any object in term of the number of pixel persent
+        <b>►Pixel:-</b> the smallest addressable screen element or smallest addressable area which we can control on the screen at some point of time is called pixel\n\n
+        <b>►Resolution:-</b>the number of points that can be displayed without overlapping each other on the screen is defined as resolution. \n\n\
 
-
+<b>►Aspect ratio :-</b> it is a ratio of vertical length by horizontal length
+of any object in term of the number of pixel present\n\n\n
     </string>
-    <string name="graphics_workstation">Graphics workStation :-</string>
-    <string name="second_segment_workstation_graphics">-it is a graphical kernal system (gks) term for a graphical
-device that can display graphical output and accept graphical
-input\n
--It consists of cpu ,display,processer ,memory,display device
-,recoder,plotter,keyboard,mouse,scanner,etc..\n
--Thev main hardware component of a graphics workstation are
+    <string name="graphics_unit_1_part_2"><b>►Graphics workStation :-</b></string>\n\n
+    <string name="graphics_unit_1_part_3">
+        •it is a graphical kernel system term for a graphical
+device that can display graphical output and accept graphical input\n
+•It consists of cpu ,display,processer ,memory,display device
+,recorder,plotter,keyboard,mouse,scanner,etc..\n
+•The main hardware component of a graphics workstation are
 cpu and display processor.\n
--The display processor is also called graphics controller or a
-a diplay co-processor.\n
--It makes cpu free from the graphical work.\n
--In addition to the system memory a seperate display procesor
+•The display processor is also called graphics controller or a
+a display co-processor.\n
+•It makes cpu free from the graphical work.\n
+•In addition to the system memory a seperate display procesor
  memory area is provided.\n
-- The graphical workstation have a provision to interface
-videogame and television set\n
-- They also have display devices with very high resolution and
-veru high performance cpu.\n
--The graphical workstation is always supported with graphical
-software\n
-.
-
-Framebuffer-\n\n
-A frame buffer is a secondary memory buffer used to construct a video frame before it is displayed on a
-screem surface.\n
-
-# It is an area of memory used to hold the frame of data that
- is continusly being send to the screen .\n
-# The buffer is the size of maximum image that can be displayed and
-  may be a seprate memory bank on the graphics card or a reserved part of regular
-memory.\n
-        #framebuffer is represented by an array which collects and store the intensity value
-for all the pixel\n
-# This array is accesed by the display device to determine the intensity at which 
-each pixel should be displayed\n
-         Therefor, a frame buffer contains internal representation of pixel
+• The graphical workstation have a provision to interface
+video games and television set\n
+• They also have display devices with very high resolution and
+very high performance cpu.\n
+•The graphical workstation is always supported with graphical
+software.\n\n\n
 </string>
 
+    <string name="graphics_unit_1_part_4">
+
+        <b>►Random Scan and Raster Scan Display:</b>\n\n
+        <b>1.Random Scan Display:</b>\n\n
+        Random Scan System uses an electron beam which operates like a pencil to create a line image on the CRT screen. The picture is constructed out of a sequence of straight-line segments. Each line segment is drawn on the screen by directing the beam to move from one point on the screen to the next, where its x and y coordinates define each point. After drawing the picture. The system cycles back to the first line and design all the lines of the image 30 to 60 time each second. \n\n
+        Random-scan monitors are also known as vector displays or stroke-writing displays or calligraphic displays.\n
+
+        <b>Advantages:</b>\n\n
+•A CRT has the electron beam directed only to the parts of the screen where an image is to be drawn.\n
+•Produce smooth line drawings.\n
+•High Resolution\n\n
+<b>Disadvantages:</b>\n\n
+•Random-Scan monitors cannot display realistic shades scenes.\n\n\n
+            </string>
+
+    <string name="graphics_unit_1_part_5">
+    <b>2.Raster Scan Display:</b>\n\n
+A Raster Scan Display is based on intensity control of pixels in the form of a rectangular box called Raster on the screen. Information of on and off pixels is stored in refresh buffer or Frame buffer. Televisions in our house are based on Raster Scan Method. The raster scan system can store information of each pixel position, so it is suitable for realistic display of objects. Raster Scan provides a refresh rate of 60 to 80 frames per second.\n
+Frame Buffer is also known as Raster or bit map. In Frame Buffer the positions are called picture elements or pixels. Beam refreshing is of two types. First is horizontal retracing and second is vertical retracing. When the beam starts from the top left corner and reaches the bottom right scale, it will again return to the top left side called at vertical retrace. Then it will again more horizontally from top to bottom call as horizontal retracing.\n
+        </string>
+
+    <string name="graphics_unit_1_part_6">
+    <b>►Antialiasing problem and solution techniques.</b>\n\n
+•Antialiasing is a technique used in computer graphics to remove the aliasing effect. The aliasing effect is the appearance of jagged edges or “jaggies” in a rasterized image (an image rendered using pixels). The problem of jagged edges technically occurs due to distortion of the image when scan conversion is done with sampling at a low frequency, which is also known as Undersampling. Aliasing occurs when real-world objects which comprise of smooth, continuous curves are rasterized using pixels.
+Cause of anti-aliasing is Undersampling. Undersampling results in loss of information of the picture.\n\n
+
+       <b> Methods of Antialiasing (AA) –</b>\n\n
+Aliasing is removed using four methods: Using high-resolution display, Post filtering (Supersampling), Pre-filtering (Area Sampling), Pixel phasing. These are explained as following below.\n\n
+
+        <b>•Using high-resolution display:</b>\n\n
+One way to reduce aliasing effect and increase sampling rate is to simply display objects at a higher resolution. Using high resolution, the jaggies become so small that they become indistinguishable by the human eye. Hence, jagged edges get blurred out and edges appear smooth.\n
+Practical applications:\n
+For example retina displays in Apple devices, OLED displays have high pixel density due to which jaggies formed are so small that they blurred and indistinguishable by our eyes.\n\n
+
+                <b>•Post filtering (Supersampling):</b>\n\n
+In this method, we are increasing the sampling resolution by treating the screen as if it’s made of a much more fine grid, due to which the effective pixel size is reduced. But the screen resolution remains the same. Now, intensity from each subpixel is calculated and average intensity of the pixel is found from the average of intensities of subpixels. Thus we do sampling at higher resolution and display the image at lower resolution or resolution of the screen, hence this technique is called supersampling. This method is also known as post filtration as this procedure is done after generating the rasterized image.\n
+Practical applications:\n
+In gaming, SSAA (Supersample Antialiasing) or FSAA (full-scene antialiasing) is used to create best image quality. It is often called the pure AA and hence is very slow and has a very high computational cost. This technique was widely used in early days when better AA techniques were not available. Different modes of SSAA available are: 2X, 4X, 8X, etc. denoting that sampling is done x times (more than) the current resolution.\n
+
+A better style of AA is MSAA (multisampling Antialiasing) which is a faster and approximate style of supersampling AA.It has lesser computational cost. Better and sophisticated supersampling techniques are developed by graphics card companies like CSAA by NVIDIA and CFAA by AMD.\n\n
+
+                <b>•Pre filtering :</b>\n\n
+In area sampling, pixel intensities are calculated proportional to areas of overlap of each pixel with objects to be displayed. Here pixel color is computed based on the overlap of scene’s objects with a pixel area.\n
+
+For example: Suppose, a line passes through two pixels. The pixel covering bigger portion(90%) of line displays 90% intensity while less area(10%) covering pixel displays 10-15% intensity. If pixel area overlaps with different color areas, then the final pixel color is taken as an average of colors of the overlap area. This method is also known as pre-filtering as this procedure is done BEFORE generating the rasterized image. It’s done using some graphics primitive algorithms.\n
+•Pixel phasing:\n
+It’s a technique to remove aliasing. Here pixel positions are shifted to nearly approximate positions near object geometry. Some systems allow the size of individual pixels to be adjusted for distributing intensities which is helpful in pixel phasing.\n\n
+    </string>
+
+
+    <string name="graphics_unit_1_part_7">
+
+          <b>►Video Memory</b>\n\n
+        Video memory is memory located on the video card, in some cases located on the motherboard, that is accessible by the video and computer processor. With more video memory, the video card and computer are capable of handling more complex graphics at a faster rate.\n
+        Like RAM in a computer, video memory temporarily stores data relating to graphics. As new graphics data comes into the video card, it replaces graphics data no longer needed in the video memory. When a computer is turned off, any graphics data in the video memory is removed.\n\n
+    <b>►Frame Buffer</b>\n\n
+    An area of memory used to hold the frame of data that is continuously being sent to the screen. The buffer is the size of the maximum image that can be displayed and may be a separate memory bank on the graphics card (display adapter) or a reserved part of regular memory. Sophisticated graphics systems are built with several memory planes, each holding one or more bits of the pixel.\n\n
+    </string>
 <!--    VB.Net UNIT 1 STRINGS-->
     <string name="firstsegmentvbunit1">
-      <u><b> *DOT NET Framework</b></u>\n:-
+      <u><b>►DOT NET Framework</b></u>\n:-
         The .Net framework is a software development platform developed by Microsoft. The framework was meant to create applications,
         which would run on the Windows Platform. The first version of the .Net framework was released in the year 2002.\n
         The version was called .Net framework 1.0. The .Net framework has come a long way since then, and the current version is 4.7.1.\n\n
@@ -379,7 +410,7 @@ each pixel should be displayed\n
 
 
 
-  * <b><u>Overview and Base Class Library</u></b>:-\n
+   <b><u>►Overview and Base Class Library</u></b>:-\n
 The Framework Class Library or FCL provides the system functionality in the .NET Framework as it has various classes, data types, interfaces, etc. to perform multiple
 functions and build different types of applications such as desktop applications, web applications, mobile applications, etc. The Framework Class Library is integrated
  with the Common Language Runtime (CLR) of the .NET framework and is used by all the .NET languages such as C#, F#, Visual Basic .NET, etc.\n\n
@@ -403,23 +434,23 @@ Windows applications and so on.\n\n
 
 
 
-* <u><b>MSIL</b></u>:-\n MSIL stands for Microsoft Intermediate Language. We can call it as Intermediate Language (IL) or Common Intermediate Language (CIL). During the compile time , the compiler convert the source code into Microsoft Intermediate
+ <u><b>►MSIL</b></u>:-\n MSIL stands for Microsoft Intermediate Language. We can call it as Intermediate Language (IL) or Common Intermediate Language (CIL). During the compile time , the compiler convert the source code into Microsoft Intermediate
 Language (MSIL) .Microsoft Intermediate Language (MSIL) is a CPU-independent set of instructions that can be efficiently converted to the native code. \n\n
 
 
 
-* <u><b>Common Language Run Time (CLR)</b></u>\n:-
+<u><b>►Common Language Run Time (CLR)</b></u>\n:-
 CLR is the basic and Virtual Machine component of the .NET Framework. It is the run-time enviornment in the .NET Framework that runs the codes and helps in making the development process easier by providing the various services.
 Basically, it is responsible for managing the execution of .NET programs regardless of any .NET programming language. Internally, CLR implements the VES(Virtual Execution System) which is defined in the Microsoft’s implementation
  of the CLI(Common Language Infrastructure).The code that runs under the Common Language Runtime is termed as the Managed Code. In other words, you can say that CLR provides a managed execution enviornment for the .NET programs
 by improving the security, including the cross language integration and a rich set of class libraries etc. CLR is present in everyn .NET framework verison\n\n</string>
     <string name="second_segment_vb_unit1">
-        * <b><u>Events</u></b>:-\nAn event is an action or occurrence such as a mouse click, a key press, mouse movements, or any system-generated notification. A process communicates through events. For example, interrupts are system-generated events.
+         <b><u>►Events</u></b>:-\nAn event is an action or occurrence such as a mouse click, a key press, mouse movements, or any system-generated notification. A process communicates through events. For example, interrupts are system-generated events.
  When events occur, the application should be able to respond to it and manage it.\n\n
 
 
 
-* <b><u>.NET Assemblies</u></b>:-\nAssemblies form the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications.
+<b><u>► .NET Assemblies</u></b>:-\nAssemblies form the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications.
  An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality.
  Assemblies take the form of executable (.exe) or dynamic link library (.dll) files, and are the building blocks of .NET applications.
  They provide the common language runtime with the information it needs to be aware of type implementations.\n
@@ -439,7 +470,7 @@ Assemblies have the following properties:\n\n
 5.You can load an assembly just to inspect it by using the MetadataLoadContext class in .NET Core and the Assembly.ReflectionOnlyLoad or Assembly.ReflectionOnlyLoadFrom methods in .NET Core and .NET Framework.\n\n\n
 
 
-In .Net 3 types of Assemblies are available:\n\n
+<b>In .Net 3 types of Assemblies are available:\n\n</b>
 
         1. <u>Private Assemblies</u> : Private Assemblies are designed to be used by one application and
                                    must reside in that application\'s directory or subdirectory. \n
@@ -454,7 +485,7 @@ In .Net 3 types of Assemblies are available:\n\n
         3. <u>Satellite Assembly</u>: A satellite Assembly is defined as an assembly with resources only, no
                                  executable code.\n
 
-        * <b><u>Advantages of Assemblies over Predecessors</u></b>:-\n
+         <b><u>► Advantages of Assemblies over Predecessors</u></b>:-\n
 Assemblies are designed to simplify application deployment and to solve versioning problems that can occur with component-based applications.\n
 End users and developers are familiar with versioning and deployment issues that arise from today\’s component-based systems. Some end users have
 experienced the frustration of installing a new application on their computer, only to find that an existing application has suddenly stopped working.
@@ -463,7 +494,7 @@ Many deployment problems have been solved by the use of assemblies in the .NET F
 dependencies on registry entries, assemblies enable zero-impact application installation. They also simplify uninstalling and replicating applications.
 \n\n\n
 
-        * <u><b>Dynamic Link Library (DLL)</b></u>>:-\n
+        <u><b>► Dynamic Link Library (DLL)</b></u>>:-\n
 A DLL is a library that contains code and data that can be used by more than one program at the same time. For example, in Windows operating systems,
 the Comdlg32 DLL performs common dialog box related functions. Therefore, each program can use the functionality that is contained in this DLL to implement
 an Open dialog box. This helps promote code reuse and efficient memory usage.\n
@@ -473,7 +504,7 @@ only loaded when that functionality is requested.\n
 Additionally, updates are easier to apply to each module without affecting other parts of the program. For example, you may have a payroll program, and the tax
 rates change each year. When these changes are isolated to a DLL, you can apply an update without needing to build or install the whole program again.\n\n
 
-        *<u><b>Namespaces</b></u>:-\n
+        <u><b>► Namespaces</b></u>:-\n
 Namespace is logical division of class, structure and interface OR way to organize your Visual Basic .NET code is through the use of namespaces.\n
 Namespaces are a way of grouping type names and reducing the chance of name collisions.\n
 The namespace with all the built-in functionality comes under System namespace. All other namespaces comes under this System namespace.\n\n
@@ -485,7 +516,7 @@ using System.Data;
 // Namespace Declaration in VB\n
 imports system;\n
 imports system.Data;\n\n
-        <u><b>*Visual Studio IDE</b></u>:-
+        <u><b>► Visual Studio IDE</b></u>:-
 
     </string>
     <string name="arrayvbunit3">An array stores a fixed-size sequential collection of elements of the same type. An array is

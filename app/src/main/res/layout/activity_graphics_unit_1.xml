@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".graphicsActivities.graphics_unit_1">
 <ScrollView
     android:layout_width="wrap_content"
@@ -11,27 +12,79 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       android:orientation="vertical"
-        >
+       android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/graphics_unit1_firstsagment"/>
+            android:text="@string/graphics_unit_1_part_1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize" />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/graphics_workstation"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/graphics_unit_1_part_2"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:text="@string/second_segment_workstation_graphics"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/graphics_unit_1_part_3"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/graphics_unit_1_part_4"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize" />
+
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/random_scan_graphics"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/graphics_unit_1_part_5"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/raster_scan_graphics"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/graphics_unit_1_part_6"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/graphics_unit_1_part_7"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize" />
+
+
+
 
     </LinearLayout>
 </ScrollView>
