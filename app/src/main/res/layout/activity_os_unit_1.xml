@@ -20,7 +20,8 @@
         android:text="@string/OS_unit_1_part_1"
         android:textSize="@dimen/textsize"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black" />
             <ImageView
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
@@ -32,7 +33,9 @@
                 android:text="@string/OS_unit_1_part_2"
                 android:textSize="@dimen/textsize"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
             <ImageView
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
@@ -43,7 +46,9 @@
                 android:text="@string/OS_unit_1_part_3"
                 android:textSize="@dimen/textsize"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
             <ImageView
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
@@ -55,7 +60,9 @@
                 android:text="@string/OS_unit_1_part_5"
                 android:textSize="@dimen/textsize"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
             <ImageView
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
@@ -68,21 +75,27 @@
                 android:text="@string/OS_unit_1_part_6"
                 android:textSize="@dimen/textsize"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
 
             <TextView
                 android:layout_marginTop="10dp"
                 android:text="@string/OS_unit_1_part_7"
                 android:textSize="@dimen/textsize"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
 
             <TextView
                 android:layout_marginTop="10dp"
                 android:text="@string/OS_unit_1_part_8"
                 android:textSize="@dimen/textsize"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
 
 
             <TextView
@@ -90,9 +103,9 @@
                 android:text="@string/OS_unit_1_part_9"
                 android:textSize="@dimen/textsize"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
 
         </LinearLayout>
     </ScrollView>

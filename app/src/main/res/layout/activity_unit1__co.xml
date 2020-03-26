@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/txt"
-        android:textSize="15dp"
+        android:textSize="@dimen/textsize"
         android:textStyle="italic"
         android:textColor="@android:color/black"
         android:text="@string/IOheading"/>
@@ -34,7 +34,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="15dp"
+            android:textSize="@dimen/textsize"
             android:textColor="@android:color/black"
             android:textStyle="italic"
             android:text="@string/traid"/>
@@ -70,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Basic_symbol"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -83,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Bus_transfer"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/below_bus"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"/>
             <ImageView
@@ -114,7 +114,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/memory_transfer"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -128,7 +128,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/A_write_micro_operation"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -143,7 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/The_ALU"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -156,7 +156,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Arithmetic_Circuit"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -174,7 +174,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Logic"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -192,7 +192,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Logic_Circuit"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -205,7 +205,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/F0"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -218,7 +218,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/The_ALU_can"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -231,7 +231,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/CONTROL_FUNCTIONS"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -243,7 +243,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Generation"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -255,7 +255,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/BASIC_COMPUTER"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -267,7 +267,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Demonstration"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -279,7 +279,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Computer_Instructions"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -291,7 +291,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/The_memory"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -303,7 +303,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/A_computer_should"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -319,7 +319,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/TIMING"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -335,7 +335,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/A_digital"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -347,7 +347,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Fetch_Cycle"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -359,7 +359,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/The_indirect"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
@@ -371,7 +371,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Interrupts"
-                android:textSize="15dp"
+                android:textSize="@dimen/textsize"
                 android:textStyle="italic"
                 android:textColor="@android:color/black"
                 />
