@@ -1,13 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".os_Activities.os_Unit_2">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:textSize="45dp"
-    android:text="put unit 2 os note here "/>
-</RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context=".os_Activities.os_Unit_2">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OS_unit_2_part_1"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="200dp"
+                    android:src="@drawable/process_os_unit2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OS_unit_2_part_2"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="200dp"
+                    android:src="@drawable/process_state"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OS_unit_2_part_3"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="200dp"
+                    android:src="@drawable/pcb_os_unit_2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OS_unit_2_part_4"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="200dp"
+                    android:src="@drawable/process_scheduling_os_unit_2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OS_unit_2_part_5"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize" />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
