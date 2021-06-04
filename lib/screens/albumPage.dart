@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:image_compariosn/controller/imageComparescreenController.dart';
 import 'package:photo_gallery/photo_gallery.dart';
 import 'package:transparent_image/transparent_image.dart';
 
@@ -81,10 +82,11 @@ class AlbumPageState extends State<AlbumPage> {
                         width: MediaQuery.of(context).size.width * 1,
                         child: ElevatedButton(
                             onPressed: () {
+                              //ImageCompareScreenController(selectedIDList,selectedMediumList);
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) => ImageCompare(
-                                        selectedImageID: selectedIDList,
-                                        selectedMediumList: selectedMediumList,
+                                        selectedImageI: selectedIDList,
+                                        selectedMediumLis: selectedMediumList,
                                       )));
                             },
                             child: Row(

@@ -30,12 +30,14 @@ dependencies:
   photo_gallery: ^1.0.1
   transparent_image: ^2.0.0
   fluttertoast: ^8.0.7
+  get: ^4.1.4
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-# For information on the generic Dart part of this file, see the
+# For information on the generic Dart part of this file, see thefk
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.
 flutter:

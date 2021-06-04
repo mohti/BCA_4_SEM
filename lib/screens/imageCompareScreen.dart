@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:image_compariosn/controller/imageComparescreenController.dart';
 import 'package:images_picker/images_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -8,23 +9,31 @@ import 'package:share/share.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_compariosn/widgets/widgets.dart';
 import 'package:transparent_image/transparent_image.dart';
-
+import 'package:get/get.dart';
 import 'imageViewer.dart';
 
 List<String> favoriteImage = [];
+  // List<String> selectedImageID;
+  // List<Medium> selectedMediumList;
 
 class ImageCompare extends StatefulWidget {
-  final List<String> selectedImageID;
-  final List<Medium> selectedMediumList;
-
+  // final List<String> selectedImageID;
+  // final List<Medium> selectedMediumList;
+  List<String> selectedImageI;
+  List<Medium> selectedMediumLis;
+   //ImageCompare('hg');
   ImageCompare(
-      {@required this.selectedImageID, @required this.selectedMediumList});
+      {@required this.selectedImageI, @required this.selectedMediumLis});
   @override
   _ImageCompareState createState() => _ImageCompareState();
 }
 
 class _ImageCompareState extends State<ImageCompare> {
-  // conts
+hello() {
+  final Image_CompareScreenController = Get.put(ImageCompareScreenController(
+      widget.selectedImageI, widget.selectedMediumLis));
+}
+   // conts
   bool accepted = false;
 
   List<String> selectedPathList = [];
@@ -47,16 +56,23 @@ class _ImageCompareState extends State<ImageCompare> {
   @override
   void initState() {
     super.initState();
-    print(widget.selectedImageID);
-
+    print(widget.selectedImageI);
+ hello();
     SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft]);
   }
 
   @override
   Widget build(BuildContext context) {
-    double containerHeight = MediaQuery.of(context).size.height * 0.89;
-    double containerWidth = MediaQuery.of(context).size.width * 0.08;
-    return Scaffold(
+    double containerHeight = MediaQuery
+        .of(context)
+        .size
+        .height * 1.02;
+    double containerWidth = MediaQuery
+        .of(context)
+        .size
+        .width * 0.08;
+    return
+     Scaffold(
       backgroundColor: Colors.black,
       body: Row(
         // mainAxisAlignment: MainAxisAlignment.start,
@@ -70,14 +86,15 @@ class _ImageCompareState extends State<ImageCompare> {
           //   color: Colors.deepOrange,
           //   child: ReorderableList,
           // ),
-          Container(
-            height: containerHeight,
+          GetBuilder<ImageCompareScreenController>(builder: (gxValues) {
+            return Container(
+            //height: containerHeight,
             width: containerWidth,
             child: Stack(
               children: [
                 Positioned(
-                  top: -10,
-                  right: 20,
+                   top: -10,
+                   right: 20,
                   child: iconButton(
                       color: Colors.red,
                       function: null,
@@ -93,31 +110,34 @@ class _ImageCompareState extends State<ImageCompare> {
                       function: saveToGallery,
                       size: 20),
                 ),
-                widget.selectedImageID != null
-                    ? SizedBox(
-                        height: containerHeight,
-                        child: ListView.builder(
-                          physics: ClampingScrollPhysics(),
-                          scrollDirection: Axis.vertical,
-                          shrinkWrap: true,
-                          itemCount: widget.selectedImageID.length,
-                          itemBuilder: (BuildContext context, int index) {
-                            return Container(
-                                margin: EdgeInsets.symmetric(vertical: 4),
-                                child:
-                                    DragBox(widget.selectedMediumList[index]));
-                          },
-                        ),
-                      )
+              gxValues.selectedImageID != null
+                    ? Container(
+                     height: containerHeight,
+                      child: ListView.builder(
+                      physics: ClampingScrollPhysics(),
+                      scrollDirection: Axis.vertical,
+                      shrinkWrap: true,
+                      itemCount: gxValues.selectedImageID.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        return Container(
+                          margin: EdgeInsets.symmetric(vertical: 4),
+                          //mohit from here we buid
+                          child:
+                          DragBox(gxValues.selectedMediumList[index])
+                            );
+                    },
+                  ),
+                )
                     : SizedBox(),
               ],
             ),
-          ),
+          );}),
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
       floatingActionButton: shareButton(context),
     );
+
   }
 
   Padding shareButton(BuildContext context) {
@@ -128,6 +148,7 @@ class _ImageCompareState extends State<ImageCompare> {
         width: 50,
         child: FloatingActionButton(
           backgroundColor: Colors.black,
+
           onPressed: () {
             favoriteImage.isEmpty
                 ? Fluttertoast.showToast(
@@ -155,6 +176,7 @@ class _ImageCompareState extends State<ImageCompare> {
 
 class DragBox extends StatefulWidget {
   final Medium image;
+  ///final int index;
 
   DragBox(this.image);
   @override
@@ -162,32 +184,39 @@ class DragBox extends StatefulWidget {
 }
 
 class _DragBoxState extends State<DragBox> {
+  removeafterdrag(String index){
+    ImageCompareScreenController.two().selectedMediumList.removeLast();
+  }
   @override
   Widget build(BuildContext context) {
-    return Draggable(
-      axis: Axis.horizontal,
-      data: widget.image,
-      child: Container(
-        // width: 200,
-        // height: 200,
-        child: FadeInImage(
-            placeholder: MemoryImage(kTransparentImage),
-            image: ThumbnailProvider(
-                mediumId: widget.image.id,
-                mediumType: widget.image.mediumType,
-                highQuality: true)),
-      ),
-      feedback: Container(
-        width: 100,
-        height: 100,
-        child: FadeInImage(
-            placeholder: MemoryImage(kTransparentImage),
-            image: ThumbnailProvider(
-                mediumId: widget.image.id,
-                mediumType: widget.image.mediumType,
-                highQuality: true)),
-      ),
-    );
+      return Container (
+          child:GetBuilder<ImageCompareScreenController>(builder: (gxValues) {
+           return  Draggable(
+              affinity:Axis.horizontal,
+             data: widget.image,
+              child: Container(
+                 child: FadeInImage(
+                    placeholder: MemoryImage(kTransparentImage),
+                    image: ThumbnailProvider(
+                           mediumId: widget.image.id,
+                        mediumType: widget.image.mediumType,
+                        highQuality: false)),
+             
+              ),
+
+            feedback: Container(
+               width: 100,
+               height: 100,
+               child: FadeInImage(
+                placeholder: MemoryImage(kTransparentImage),
+                image: ThumbnailProvider(
+                    mediumId: widget.image.id,
+                    mediumType: widget.image.mediumType,
+                    highQuality: true)),
+               ),
+            //delay: Duration(milliseconds: 50),
+           );
+          }),);
   }
 }
 
@@ -200,6 +229,7 @@ class DropBox extends StatefulWidget {
 }
 
 class _DropBoxState extends State<DropBox> {
+  //selectedImageID
   removeImage() {
     if (imagePath != null) {
       Fluttertoast.showToast(
@@ -249,14 +279,22 @@ class _DropBoxState extends State<DropBox> {
   Widget build(BuildContext context) {
     double containerHeight = MediaQuery.of(context).size.height * 1;
     double containerWidth = MediaQuery.of(context).size.width * 0.30;
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 2),
-      child: DragTarget(
-        onAccept: (Medium string1) {
-          imagePath = string1;
-          setState(() {
+    return Container (
+    child:
+      GetBuilder<ImageCompareScreenController>(builder: (gxValues) {
+       return Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 2),
+          child: DragTarget(
+          onAccept: (Medium string1) {
+            imagePath = string1;
+            setState(() {
             widget.accepted = true;
-          });
+            gxValues.selectedMediumList.remove(string1);
+            gxValues.update();
+          }
+          );
+          //selectedMediumList[index]
+         // widget.selectedMediumList[index]
         },
         builder: (
           BuildContext context,
@@ -287,8 +325,12 @@ class _DropBoxState extends State<DropBox> {
                               image: ThumbnailProvider(
                                   mediumId: imagePath.id,
                                   mediumType: imagePath.mediumType,
-                                  highQuality: true)),
-                        )
+                                  highQuality: true)
+                            // ImageCompareScreenController.two().selectedMediumList.removeLast(),
+                        ),
+
+
+                  )
                       : Text(
                           'Drag and Drop Images Here',
                           textAlign: TextAlign.center,
@@ -328,7 +370,8 @@ class _DropBoxState extends State<DropBox> {
             ),
           );
         },
+
       ),
-    );
+    ); }),);
   }
 }
