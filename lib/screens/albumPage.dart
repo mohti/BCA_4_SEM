@@ -55,6 +55,9 @@ class AlbumPageState extends State<AlbumPage> {
                 crossAxisCount: 2,
                 mainAxisSpacing: 5.0,
                 crossAxisSpacing: 1.0,
+                //reverse: true,
+                addAutomaticKeepAlives: true,
+                //               addRepaintBoundaries: false,
                 children: <Widget>[
                   ...?_media?.map((medium) => ShowImage(
                       medium: medium,
@@ -65,13 +68,12 @@ class AlbumPageState extends State<AlbumPage> {
                             selectedIDList.add(medium.id);
                             selectedMediumList.add(medium);
                           } else {
-                            // print('unslected');
-                            selectedIDList.remove(int.parse(medium.id));
-                            selectedMediumList.remove(medium);
+                            print('unslected');
+                           selectedIDList.remove(int.parse(medium.id));
+                           selectedMediumList.remove(medium);
                           }
                         });
-                        // print("${int.parse(medium.id)} : $value");
-                      }))
+                        }))
                 ]),
             selectedMediumList.length < 1
                 ? Container()
@@ -82,6 +84,7 @@ class AlbumPageState extends State<AlbumPage> {
                         width: MediaQuery.of(context).size.width * 1,
                         child: ElevatedButton(
                             onPressed: () {
+
                               //ImageCompareScreenController(selectedIDList,selectedMediumList);
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) => ImageCompare(
@@ -101,7 +104,8 @@ class AlbumPageState extends State<AlbumPage> {
                             style: ElevatedButton.styleFrom(
                                 primary: Theme.of(context).primaryColor,
                                 shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(0))))))
+                                    borderRadius: BorderRadius.circular(0))))
+                    ))
           ],
         ),
       ),
@@ -109,21 +113,24 @@ class AlbumPageState extends State<AlbumPage> {
   }
 }
 
-class ShowImage extends StatefulWidget {
+ class ShowImage extends StatefulWidget {
   final Medium medium;
-
   final ValueChanged<bool> isSelected;
-
   ShowImage({this.medium, this.isSelected});
   @override
   _ShowImageState createState() => _ShowImageState();
 }
 
-class _ShowImageState extends State<ShowImage> {
+class _ShowImageState extends State<ShowImage> with AutomaticKeepAliveClientMixin{
   bool isSelected = false;
+
+ @override
+  bool get wantKeepAlive => true;
 
   @override
   Widget build(BuildContext context) {
+   super.build(context);
+  
     return GestureDetector(
       onTap: () async {
         setState(() {

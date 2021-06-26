@@ -12,16 +12,16 @@ import 'package:transparent_image/transparent_image.dart';
 import 'package:get/get.dart';
 //import 'imageViewer.dart';
 
-
 class ImageCompareScreenController extends GetxController {
   List<String> selectedImageID;
   List<Medium> selectedMediumList;
+
   ImageCompareScreenController.two();
-  ImageCompareScreenController(
-      this.selectedImageID, this.selectedMediumList);
-  removeafterdrag(int index){
+
+  ImageCompareScreenController(this.selectedImageID, this.selectedMediumList);
+
+  removeafterdrag(int index) {
     selectedMediumList.removeAt(index);
     update();
   }
-
 }
